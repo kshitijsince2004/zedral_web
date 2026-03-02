@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 160 40% 14%;
+
+    --card: 150 10% 96%;
+    --card-foreground: 160 40% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 40% 14%;
+
+    --primary: 160 40% 14%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 10% 96%;
+    --secondary-foreground: 160 40% 14%;
+
+    --muted: 150 10% 96%;
+    --muted-foreground: 160 10% 45%;
+
+    --accent: 43 90% 55%;
+    --accent-foreground: 160 40% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 10% 90%;
+    --input: 150 10% 90%;
+    --ring: 160 40% 14%;
+
+    --radius: 0.75rem;
+
+    /* Nav specific */
+    --nav-bg: 160 40% 14%;
+    --nav-foreground: 0 0% 100%;
+
+    /* CTA gradient */
+    --cta-from: 160 45% 22%;
+    --cta-to: 160 50% 12%;
+
+    /* Hero gradient */
+    --hero-from: 160 60% 18%;
+    --hero-to: 160 50% 8%;
+
+    --sidebar-background: 150 10% 97%;
+    --sidebar-foreground: 160 40% 14%;
+    --sidebar-primary: 160 40% 14%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 10% 94%;
+    --sidebar-accent-foreground: 160 40% 14%;
+    --sidebar-border: 150 10% 90%;
+    --sidebar-ring: 160 40% 14%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Marquee animations */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 30s linear infinite;
+}
+
+@keyframes logo-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-logo-scroll {
+  animation: logo-scroll 20s linear infinite;
+}

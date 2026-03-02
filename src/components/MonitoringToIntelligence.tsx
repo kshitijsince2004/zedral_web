@@ -1,0 +1,53 @@
+import { motion } from "framer-motion";
+
+const MonitoringToIntelligence = () => (
+  <section className="py-20 md:py-28 bg-secondary px-6">
+    <div className="max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
+            A Shift from Monitoring to Intelligence
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          viewport={{ once: true }}
+          className="space-y-5"
+        >
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Traditional monitoring observes. <span className="text-foreground font-semibold">Zedral interprets.</span>
+          </p>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Where static metrics provide hindsight, structured operational intelligence enables forward-looking decision support.
+          </p>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Organizations gain deeper awareness of how efficiency evolves across time, shifts, and workflows.
+          </p>
+        </motion.div>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto p-8 md:p-12"
+      >
+        <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed text-center italic">
+          "Efficiency is not about pressure. It is about precision. Zedral exists to help organizations operate with greater clarity, better coordination, and measured advancement in operational performance."
+        </p>
+        <p className="mt-6 text-center text-sm text-muted-foreground">— The Zedral Philosophy</p>
+      </motion.div>
+    </div>
+  </section>
+);
+
+export default MonitoringToIntelligence;
