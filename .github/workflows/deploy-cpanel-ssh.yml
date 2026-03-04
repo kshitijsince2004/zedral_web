@@ -6,11 +6,15 @@ name: Deploy to cPanel (SSH)
 # 1. Enable SSH in cPanel
 # 2. Add SSH secrets to GitHub (see AUTO-DEPLOY-SETUP.md)
 # 3. Delete or disable deploy-cpanel.yml
-# 4. Rename this file to remove .example extension
+# 4. Enable this workflow by uncommenting the 'on:' section below
+
+# DISABLED BY DEFAULT - Uncomment below to enable
+# on:
+#   push:
+#     branches: [ main ]
+#   workflow_dispatch:
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
