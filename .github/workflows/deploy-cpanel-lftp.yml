@@ -1,11 +1,10 @@
 name: Deploy to cPanel (LFTP)
 
-# Most reliable method for cPanel FTP deployment
-# Uses LFTP with passive mode and SSL support
+# LFTP deployment method
+# Disabled due to connection timeout issues
+# Using CURL method instead (see deploy-cpanel-curl.yml)
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -48,14 +47,17 @@ jobs:
         set ftp:ssl-force no;
         set ssl:verify-certificate no;
         set ftp:passive-mode on;
-        set net:timeout 30;
-        set net:max-retries 10;
-        set net:reconnect-interval-base 5;
+        set net:timeout 60;
+        set net:max-retries 20;
+        set net:reconnect-interval-base 10;
+        set net:reconnect-interval-multiplier 1;
         set ftp:list-options -a;
+        set mirror:parallel-transfer-count 1;
+        set mirror:use-pget-n 1;
         open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
         cd /public_html || cd public_html;
         pwd;
-        mirror -R --verbose --parallel=2 --exclude .git/ --exclude .github/ --exclude node_modules/ ./dist/ .;
+        mirror -R --verbose --no-perms --exclude .git/ --exclude .github/ --exclude node_modules/ --parallel=1 ./dist/ .;
         bye;
         "
         
