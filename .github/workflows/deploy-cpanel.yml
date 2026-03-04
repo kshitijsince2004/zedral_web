@@ -1,8 +1,10 @@
-name: Deploy to cPanel
+name: Deploy to cPanel (FTP-Deploy-Action)
+
+# Original FTP deployment method
+# Disabled due to transfer mode issues
+# Using LFTP method instead (see deploy-cpanel-lftp.yml)
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -40,6 +42,10 @@ jobs:
         local-dir: ./dist/
         server-dir: /public_html/
         dangerous-clean-slate: false
+        protocol: ftps
+        port: 21
+        timeout: 300000
+        log-level: verbose
         
     - name: ✅ Deployment complete
       run: echo "🎉 Deployment successful!"
