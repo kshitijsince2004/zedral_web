@@ -1,11 +1,9 @@
 name: Deploy to cPanel (CURL)
 
-# Most reliable method - uploads files individually
-# Slower but handles connection issues better
+# FTP deployment using CURL
+# Disabled - using SSH method instead (more reliable)
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
