@@ -39,14 +39,22 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y lftp
         
+        echo "Testing FTP connection..."
+        echo "FTP Server: ${{ secrets.FTP_SERVER }}"
+        echo "FTP Username: ${{ secrets.FTP_USERNAME }}"
+        
         lftp -c "
-        set ftp:ssl-allow no;
+        set ftp:ssl-allow yes;
+        set ftp:ssl-force no;
         set ftp:passive-mode on;
-        set net:timeout 10;
-        set net:max-retries 3;
+        set net:timeout 30;
+        set net:max-retries 5;
         set net:reconnect-interval-base 5;
+        set ftp:list-options -a;
+        set ssl:verify-certificate no;
         open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
-        mirror -R --verbose --delete-first --parallel=3 ./dist/ /public_html/;
+        ls;
+        mirror -R --verbose --parallel=2 --exclude .git/ --exclude .github/ ./dist/ /public_html/;
         bye;
         "
         
