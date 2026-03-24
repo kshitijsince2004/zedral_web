@@ -17,4 +17,15 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Remove hash from JS chunk filenames
+        entryFileNames: "assets/[name].js",
+        chunkFileNames: "assets/[name].js",
+        // Remove hash from CSS and image filenames
+        assetFileNames: "assets/[name][extname]",
+      },
+    },
+  },
 }));

@@ -221,10 +221,10 @@ const sections = [
 const CookiePolicy = () => (
   <div className="min-h-screen bg-background">
     <SEO 
-      title="Cookie Policy"
-      description="Learn about how Zedral uses cookies and tracking technologies on our platform."
+      title="Cookie Policy — Zedral"
+      description="Learn how Zedral uses cookies and tracking technologies on our manufacturing intelligence platform. We comply with India's DPDPA and provide full cookie transparency."
       url="https://zedral.com/cookies"
-      keywords="cookie policy, tracking technologies, web cookies"
+      keywords="Zedral cookie policy, manufacturing software cookies, tracking technologies India, DPDPA cookie compliance, web cookies manufacturing AI, Zedral analytics cookies"
     />
     <Navbar />
     <main className="max-w-3xl mx-auto px-6 py-24 md:py-32">

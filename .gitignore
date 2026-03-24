@@ -27,3 +27,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+id_rsa
+github_deploy_rsa
+github_deploy_rsa.pub
+deploy_key
+deploy_key.pub
+zedral_dist.zip

@@ -8,6 +8,7 @@ import domainFrontend from "@/assets/domain-frontend.png";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import valueIntent from "@/assets/value-intent.png";
 import valueOwnership from "@/assets/value-ownership.png";
 import valuePrecision from "@/assets/value-precision.png";
@@ -235,6 +236,12 @@ const Careers = () => {
 
   return (
   <div className="min-h-screen bg-background">
+    <SEO
+      title="Careers at Zedral — Build AI for Indian Manufacturing"
+      description="Join Zedral and build AI-powered operational intelligence for Indian manufacturing. Open roles in Machine Learning, Computer Vision, Backend, and Full-Stack engineering. Based in India."
+      keywords="careers at Zedral, manufacturing AI jobs India, computer vision engineer jobs India, ML engineer manufacturing startup, AI startup jobs India, operational intelligence careers, machine learning jobs India, backend engineer manufacturing AI, full stack engineer India startup, tech jobs India 2025"
+      url="https://zedral.com/careers"
+    />
     <Navbar />
 
     {/* Hero */}

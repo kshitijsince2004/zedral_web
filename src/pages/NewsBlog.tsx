@@ -1,24 +1,46 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import featureMetrics from "@/assets/feature-metrics.png";
 import { Link } from "react-router-dom";
-
-const featured = {
-  slug: "manufacturers-operating-at-65-percent",
-  category: "Operational Efficiency",
-  title: "Why Most Manufacturers Are Operating at 65% of Their True Production Potential",
-  excerpt:
-    "Manufacturing organisations across India consistently underperform against their theoretical capacity — not because of machine limitations, but because of invisible inefficiencies embedded in manual workflows. We break down where the loss happens and what structured visibility can do about it.",
-  author: "Zedral Team",
-  date: "20 February 2026",
-  readTime: "8 min read",
-};
+import { blogPosts } from "@/data/blogPosts";
 
 const NewsBlog = () => {
+  const featured = blogPosts[0];
+  const rest = blogPosts.slice(1);
+
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Zedral Insights",
+    "description":
+      "Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations.",
+    "url": "https://zedral.com/news",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zedral",
+      "url": "https://zedral.com",
+    },
+    "blogPost": blogPosts.map((p) => ({
+      "@type": "BlogPosting",
+      "headline": p.title,
+      "url": `https://zedral.com/news/${p.slug}`,
+      "datePublished": p.dateISO,
+      "author": { "@type": "Organization", "name": p.author },
+    })),
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Insights & News — Manufacturing Intelligence | Zedral"
+        description="Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations from the Zedral team."
+        keywords="manufacturing intelligence blog, AI shopfloor insights, operational efficiency articles, production optimization tips, Indian manufacturing technology"
+        url="https://zedral.com/news"
+        jsonLd={blogSchema}
+      />
+
       {/* Dark hero section */}
       <div className="bg-primary">
         <Navbar />
@@ -32,7 +54,7 @@ const NewsBlog = () => {
             >
               <span className="inline-flex items-center gap-2 text-[11px] font-medium tracking-[0.2em] uppercase text-primary-foreground/60 border border-primary-foreground/15 rounded-full px-4 py-1.5 mb-10">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                Insights & News
+                Insights &amp; News
               </span>
             </motion.div>
 
@@ -71,6 +93,7 @@ const NewsBlog = () => {
 
       {/* Light section */}
       <div className="bg-background">
+
         {/* Featured Article */}
         <section className="px-6 py-16 md:py-20">
           <div className="max-w-6xl mx-auto">
@@ -87,14 +110,14 @@ const NewsBlog = () => {
                 to={`/news/${featured.slug}`}
                 className="block rounded-2xl border border-border overflow-hidden grid md:grid-cols-2 hover:border-foreground/20 transition-colors group"
               >
-                {/* Left: illustration area */}
+                {/* Left: illustration */}
                 <div className="relative bg-muted flex items-center justify-center min-h-[280px] md:min-h-[380px] p-10">
                   <span className="inline-flex items-center gap-1.5 absolute top-5 left-5 text-[11px] font-semibold tracking-wide uppercase bg-foreground text-background px-3 py-1 rounded-md">
                     Featured
                   </span>
                   <img
-                    src={featureMetrics}
-                    alt="Production metrics illustration"
+                    src={featured.heroImage}
+                    alt={featured.title}
                     className="w-full max-w-[280px] opacity-80 mix-blend-multiply"
                   />
                 </div>
@@ -123,7 +146,9 @@ const NewsBlog = () => {
                         <p className="text-sm font-medium text-foreground">
                           {featured.author}
                         </p>
-                        <p className="text-xs text-muted-foreground">{featured.date}</p>
+                        <p className="text-xs text-muted-foreground">
+                          {featured.date}
+                        </p>
                       </div>
                     </div>
                     <span className="inline-flex items-center gap-1.5 text-sm font-medium text-accent group-hover:gap-2.5 transition-all">
@@ -135,6 +160,75 @@ const NewsBlog = () => {
             </motion.div>
           </div>
         </section>
+
+        {/* All Other Articles — Grid */}
+        {rest.length > 0 && (
+          <section className="px-6 pb-20 md:pb-28">
+            <div className="max-w-6xl mx-auto">
+              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-muted-foreground mb-8">
+                More Articles
+              </p>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {rest.map((post, i) => (
+                  <motion.div
+                    key={post.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 * i }}
+                  >
+                    <Link
+                      to={`/news/${post.slug}`}
+                      className="flex flex-col h-full rounded-2xl border border-border overflow-hidden hover:border-foreground/20 transition-colors group"
+                    >
+                      {/* Image area */}
+                      <div className="bg-muted flex items-center justify-center p-8 min-h-[180px]">
+                        <img
+                          src={post.heroImage}
+                          alt={post.title}
+                          className="w-full max-w-[180px] opacity-80 mix-blend-multiply"
+                        />
+                      </div>
+
+                      {/* Content */}
+                      <div className="p-6 flex flex-col flex-1">
+                        <span className="text-[11px] font-medium tracking-[0.15em] uppercase text-muted-foreground mb-3">
+                          {post.category}
+                        </span>
+                        <h3
+                          className="text-base font-bold text-foreground leading-snug mb-3 group-hover:text-accent transition-colors"
+                          style={{
+                            fontFamily: "'Georgia', 'Times New Roman', serif",
+                          }}
+                        >
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-6">
+                          {post.excerpt}
+                        </p>
+
+                        <div className="mt-auto flex items-center justify-between">
+                          <div>
+                            <p className="text-xs font-medium text-foreground">
+                              {post.author}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {post.date} · {post.readTime}
+                            </p>
+                          </div>
+                          <ArrowRight
+                            size={14}
+                            className="text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+                          />
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </div>
 
       <Footer />

@@ -291,10 +291,10 @@ const sections = [
 const TermsAndConditions = () => (
   <div className="min-h-screen bg-background">
     <SEO 
-      title="Terms & Conditions"
-      description="Read Zedral's terms and conditions for using our operational intelligence platform."
+      title="Terms & Conditions — Zedral Platform Agreement"
+      description="Read Zedral's terms and conditions for using our AI-powered operational intelligence platform. Governing law: India. Effective February 2026."
       url="https://zedral.com/terms"
-      keywords="terms and conditions, terms of service, legal agreement"
+      keywords="Zedral terms and conditions, manufacturing software legal agreement, operational intelligence platform terms, Zedral terms of service India, SaaS terms India, B2B software terms"
     />
     <Navbar />
     <main className="max-w-3xl mx-auto px-6 py-24 md:py-32">

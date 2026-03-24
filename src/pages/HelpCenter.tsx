@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Search, Mail } from "lucide-react";
 import {
@@ -83,6 +84,17 @@ const categories = [
 
 const quickFilters = ["Camera setup", "Dashboard", "Reports", "Billing", "Data & privacy", "AI training"];
 
+const helpSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How do I set up Zedral?", "acceptedAnswer": { "@type": "Answer", "text": "Connect your existing IP cameras, let our AI train for 3 days, then access your live dashboard. Email hello@zedral.com to begin." } },
+    { "@type": "Question", "name": "What cameras does Zedral support?", "acceptedAnswer": { "@type": "Answer", "text": "Any IP camera with an RTSP stream (H.264 or H.265), minimum 1080p at 15fps. Most standard CCTV systems work out of the box." } },
+    { "@type": "Question", "name": "Does Zedral store our video footage?", "acceptedAnswer": { "@type": "Answer", "text": "No. Video streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained." } },
+    { "@type": "Question", "name": "How do automated reports work?", "acceptedAnswer": { "@type": "Answer", "text": "Zedral sends daily production summaries via WhatsApp or email at the end of each shift. Configure recipients under Settings → Reports." } }
+  ]
+};
+
 const HelpCenter = () => {
   const [search, setSearch] = useState("");
 
@@ -101,6 +113,13 @@ const HelpCenter = () => {
 
   return (
     <div className="bg-background min-h-screen">
+      <SEO
+        title="Help Center — Zedral Support & FAQs"
+        description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing AI platform."
+        keywords="Zedral help center, Zedral support, manufacturing AI FAQ, shopfloor monitoring setup, Zedral dashboard help, operational intelligence support, Zedral camera setup"
+        url="https://zedral.com/help"
+        jsonLd={helpSchema}
+      />
       <Navbar />
 
       {/* Hero */}

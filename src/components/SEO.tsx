@@ -7,6 +7,10 @@ interface SEOProps {
   image?: string;
   url?: string;
   type?: string;
+  author?: string;
+  robots?: string;
+  // Pass an arbitrary JSON-LD object; will be injected as application/ld+json
+  jsonLd?: Record<string, unknown>;
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -18,11 +22,14 @@ interface SEOProps {
 
 const SEO = ({
   title = "Zedral — Operational Efficiency Intelligence for Modern Industry",
-  description = "Zedral is an advanced operational intelligence platform designed to improve efficiency across manufacturing and industrial environments.",
-  keywords = "operational efficiency, manufacturing intelligence, industrial monitoring, production optimization, data analytics",
+  description = "Zedral is an AI-powered operational intelligence platform that helps manufacturing companies improve efficiency using computer vision on existing cameras — no new hardware required.",
+  keywords = "operational efficiency platform, manufacturing intelligence India, AI shopfloor monitoring, production bottleneck detection, SOP compliance tracking, workstation efficiency AI, factory floor AI, Industry 4.0 India, computer vision manufacturing, real-time production monitoring, manufacturing AI software India",
   image = "https://zedral.com/og-image.png",
   url = "https://zedral.com/",
   type = "website",
+  author,
+  robots = "index, follow, max-snippet:-1, max-image-preview:large",
+  jsonLd,
   article
 }: SEOProps) => {
   const fullTitle = title.includes('Zedral') ? title : `${title} | Zedral`;
@@ -34,7 +41,9 @@ const SEO = ({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta name="robots" content={robots} />
       <link rel="canonical" href={url} />
+      {author && <meta name="author" content={author} />}
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
@@ -42,9 +51,12 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:site_name" content="Zedral" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@ZedralHQ" />
+      <meta name="twitter:creator" content="@ZedralHQ" />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
@@ -69,6 +81,13 @@ const SEO = ({
             <meta key={tag} property="article:tag" content={tag} />
           ))}
         </>
+      )}
+
+      {/* Arbitrary JSON-LD structured data */}
+      {jsonLd && (
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       )}
     </Helmet>
   );
