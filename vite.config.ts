@@ -20,11 +20,9 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        // Remove hash from JS chunk filenames
-        entryFileNames: "assets/[name].js",
-        chunkFileNames: "assets/[name].js",
-        // Remove hash from CSS and image filenames
-        assetFileNames: "assets/[name][extname]",
+        entryFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
   },

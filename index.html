@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,8 @@
     <meta name="author" content="Zedral" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://zedral.com/" />
+    <link rel="alternate" hreflang="en-IN" href="https://zedral.com/" />
+    <link rel="alternate" hreflang="en" href="https://zedral.com/" />
     <!-- Geo targeting -->
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="India" />
@@ -27,8 +29,13 @@
     <meta property="og:title" content="Zedral — AI-Powered Shopfloor Intelligence for Indian Manufacturing" />
     <meta property="og:description" content="Zedral turns your existing CCTV cameras into a real-time production intelligence system. Monitor workstations, detect bottlenecks, and track SOP compliance — no new hardware required." />
     <meta property="og:image" content="https://zedral.com/og-image.png" />
+    <meta property="og:image:secure_url" content="https://zedral.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Zedral — AI-Powered Shopfloor Intelligence for Indian Manufacturing" />
     <meta property="og:site_name" content="Zedral" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -38,7 +45,8 @@
     <meta name="twitter:title" content="Zedral — AI-Powered Shopfloor Intelligence for Indian Manufacturing" />
     <meta name="twitter:description" content="Turn your existing CCTV cameras into a real-time production intelligence system. Monitor workstations, detect bottlenecks, track SOP compliance — no hardware needed." />
     <meta name="twitter:image" content="https://zedral.com/og-image.png" />
-    
+    <meta name="twitter:image:alt" content="Zedral — AI-Powered Shopfloor Intelligence for Indian Manufacturing" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     
@@ -91,7 +99,9 @@
         "availableLanguage": "English"
       },
       "sameAs": [
-        "https://linkedin.com/company/zedral"
+        "https://www.linkedin.com/company/zedral",
+        "https://www.instagram.com/zedral.in/",
+        "https://twitter.com/ZedralHQ"
       ]
     }
     </script>
@@ -100,7 +110,17 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Zedral",
-      "url": "https://zedral.com"
+      "url": "https://zedral.com",
+      "description": "AI-powered operational intelligence platform for Indian manufacturing",
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://zedral.com/news?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
     <script type="application/ld+json">
@@ -176,5 +196,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <div style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#1a202c">
+        <h1>Zedral — Operational Efficiency Intelligence for Indian Manufacturing</h1>
+        <p>Zedral uses AI and computer vision on your existing CCTV cameras to monitor workstations, detect production bottlenecks, and track SOP compliance in real time. No new hardware required.</p>
+        <h2>What Zedral Does</h2>
+        <ul>
+          <li>Real-time workstation activity monitoring using existing cameras</li>
+          <li>Production bottleneck detection and alerting</li>
+          <li>SOP compliance tracking without manual observation</li>
+          <li>Shift-level efficiency reports delivered to plant managers</li>
+          <li>No new hardware — works with existing CCTV infrastructure</li>
+        </ul>
+        <h2>Built for Indian Manufacturing</h2>
+        <p>Zedral is designed specifically for Indian shopfloors — supporting mixed-skill workforces, legacy CCTV systems, and the operational realities of Indian manufacturing.</p>
+        <p><a href="/contact">Request a demo</a> | <a href="/news">Read our insights</a> | <a href="/careers">Join our team</a></p>
+      </div>
+    </noscript>
   </body>
 </html>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Linkedin, Instagram, Twitter } from "lucide-react";
 import logo from "@/assets/Zicji_logo-2.png";
 
 const legalLinks = [
@@ -99,6 +100,38 @@ const Footer = () => {
               </Link>
             ))}
           </div>
+
+          {/* Social links */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.linkedin.com/company/zedral"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zedral on LinkedIn"
+              className="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+            >
+              <Linkedin size={14} />
+            </a>
+            <a
+              href="https://www.instagram.com/zedral.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zedral on Instagram"
+              className="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+            >
+              <Instagram size={14} />
+            </a>
+            <a
+              href="https://twitter.com/ZedralHQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zedral on X (Twitter)"
+              className="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+            >
+              <Twitter size={14} />
+            </a>
+          </div>
+
           <p className="text-xs text-muted-foreground">
             Copyright © {new Date().getFullYear()} Zedral. All rights reserved.
           </p>

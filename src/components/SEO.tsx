@@ -9,8 +9,8 @@ interface SEOProps {
   type?: string;
   author?: string;
   robots?: string;
-  // Pass an arbitrary JSON-LD object; will be injected as application/ld+json
-  jsonLd?: Record<string, unknown>;
+  // Pass one or more JSON-LD objects; each will be injected as application/ld+json
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -28,7 +28,7 @@ const SEO = ({
   url = "https://zedral.com/",
   type = "website",
   author,
-  robots = "index, follow, max-snippet:-1, max-image-preview:large",
+  robots = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   jsonLd,
   article
 }: SEOProps) => {
@@ -45,12 +45,18 @@ const SEO = ({
       <link rel="canonical" href={url} />
       {author && <meta name="author" content={author} />}
 
-      {/* Open Graph / Facebook */}
+      {/* Open Graph / Facebook / LinkedIn */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:secure_url" content={image} />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={fullTitle} />
+      <meta property="og:locale" content="en_IN" />
       <meta property="og:site_name" content="Zedral" />
 
       {/* Twitter */}
@@ -61,10 +67,13 @@ const SEO = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={fullTitle} />
 
-      {/* Article specific meta tags */}
+      {/* Article specific meta tags (og:article + LinkedIn publisher) */}
       {article && type === 'article' && (
         <>
+          <meta property="article:publisher" content="https://www.linkedin.com/company/zedral" />
+          <meta property="og:see_also" content="https://www.instagram.com/zedral.in/" />
           {article.publishedTime && (
             <meta property="article:published_time" content={article.publishedTime} />
           )}
@@ -84,11 +93,11 @@ const SEO = ({
       )}
 
       {/* Arbitrary JSON-LD structured data */}
-      {jsonLd && (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
+      {jsonLd && (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
         </script>
-      )}
+      ))}
     </Helmet>
   );
 };
