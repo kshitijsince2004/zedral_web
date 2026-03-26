@@ -98,7 +98,7 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <img
             src={heroIllustration}
-            alt="Zedral operational intelligence platform dashboard visualization"
+            alt="Zedral cloud-based operational intelligence platform dashboard showing real-time manufacturing telemetry"
             loading="eager"
             className="w-full h-full object-cover opacity-[0.10]"
           />

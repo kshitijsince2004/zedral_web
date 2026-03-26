@@ -244,7 +244,7 @@ const sections = [
 const PrivacyPolicy = () => (
   <div className="min-h-screen bg-background">
     <SEO 
-      title="Privacy Policy — Zedral Data Protection"
+      title="Privacy Policy: Zedral Data Protection"
       description="Learn how Zedral collects, uses, and protects your data. We comply with India's Digital Personal Data Protection Act (DPDPA) 2023 and industry-leading security standards."
       url="https://zedral.com/privacy"
       keywords="Zedral privacy policy, data protection India, DPDPA compliance, manufacturing software data security, GDPR compliance India, data privacy manufacturing AI, Zedral data handling"

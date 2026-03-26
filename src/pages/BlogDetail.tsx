@@ -280,7 +280,7 @@ const BlogDetail = () => {
                 </h3>
                 <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
                   Zedral gives you workstation-level visibility from your existing
-                  cameras — no new hardware, no disruption.
+                  cameras, no new hardware, no disruption.
                 </p>
                 <Link
                   to="/contact"

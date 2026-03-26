@@ -74,7 +74,7 @@ const sections = [
         <h3 className="font-medium text-foreground mb-1">Subscription Plans</h3>
         <p className="mb-3">Zedral offers monthly and annual Subscription plans. Details of available plans, features, and pricing are set out on our website at www.zedral.ai or as otherwise agreed in a separate order form or service agreement.</p>
         <h3 className="font-medium text-foreground mb-1">Billing</h3>
-        <p className="mb-3">Subscriptions are billed in advance on a recurring basis — monthly or annually, depending on the plan selected. By providing payment information, you authorise Zedral to charge the applicable fees to your designated payment method.</p>
+        <p className="mb-3">Subscriptions are billed in advance on a recurring basis; monthly or annually, depending on the plan selected. By providing payment information, you authorise Zedral to charge the applicable fees to your designated payment method.</p>
         <h3 className="font-medium text-foreground mb-1">Taxes</h3>
         <p className="mb-3">All fees are exclusive of applicable taxes including Goods and Services Tax (GST) as levied under Indian law. You are responsible for paying all applicable taxes in connection with your Subscription.</p>
         <h3 className="font-medium text-foreground mb-1">Price Changes</h3>
@@ -291,7 +291,7 @@ const sections = [
 const TermsAndConditions = () => (
   <div className="min-h-screen bg-background">
     <SEO 
-      title="Terms & Conditions — Zedral Platform Agreement"
+      title="Terms & Conditions: Zedral Platform Agreement"
       description="Read Zedral's terms and conditions for using our AI-powered operational intelligence platform. Governing law: India. Effective February 2026."
       url="https://zedral.com/terms"
       keywords="Zedral terms and conditions, manufacturing software legal agreement, operational intelligence platform terms, Zedral terms of service India, SaaS terms India, B2B software terms"

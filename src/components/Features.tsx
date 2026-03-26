@@ -43,7 +43,7 @@ const Features = () => (
         <motion.div key={title} variants={item} className="text-center">
           <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto mb-6">{desc}</p>
-          <img src={img} alt={title} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
+          <img src={img} alt={`${title} - Zedral Operational Intelligence`} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
         </motion.div>
       ))}
     </motion.div>

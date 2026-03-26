@@ -34,7 +34,7 @@ const categories = [
     faqs: [
       {
         q: "What does the dashboard show?",
-        a: "Live line efficiency, operator output, bottleneck detection, SOP compliance rate, production count, and shift-level comparisons — all updated in real time.",
+        a: "Live line efficiency, operator output, bottleneck detection, SOP compliance rate, production count, and shift-level comparisons; all updated in real time.",
       },
       {
         q: "How do automated reports work?",
@@ -51,14 +51,14 @@ const categories = [
     faqs: [
       {
         q: "Does Zedral store our video footage?",
-        a: "No. Video streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained — never raw footage.",
+        a: "No. Video streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained, never raw footage.",
       },
       {
         q: "Does Zedral identify individual workers?",
         a: "No. Zedral focuses on workstation-level activity only. We do not use facial recognition or track individuals by identity.",
       },
       {
-        q: "We changed our process — do we need to retrain?",
+        q: "We changed our process: do we need to retrain?",
         a: "Minor changes adapt automatically. For major workflow or layout changes, notify us at hello@zedral.com and we will run a retraining cycle at no extra cost.",
       },
     ],
@@ -114,7 +114,7 @@ const HelpCenter = () => {
   return (
     <div className="bg-background min-h-screen">
       <SEO
-        title="Help Center — Zedral Support & FAQs"
+        title="Help Center: Zedral Support & FAQs"
         description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing AI platform."
         keywords="Zedral help center, Zedral support, manufacturing AI FAQ, shopfloor monitoring setup, Zedral dashboard help, operational intelligence support, Zedral camera setup"
         url="https://zedral.com/help"
@@ -168,7 +168,7 @@ const HelpCenter = () => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search — e.g. camera setup, reports, billing..."
+                placeholder="Search: e.g. camera setup, reports, billing..."
                 className="flex-1 bg-transparent text-sm text-primary-foreground placeholder:text-primary-foreground/40 outline-none"
               />
             </div>

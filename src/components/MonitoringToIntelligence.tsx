@@ -20,16 +20,19 @@ const MonitoringToIntelligence = () => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
           viewport={{ once: true }}
-          className="space-y-5"
+          className="space-y-6"
         >
           <p className="text-muted-foreground text-base leading-relaxed">
             Traditional monitoring observes. <span className="text-foreground font-semibold">Zedral interprets.</span>
           </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Where static metrics provide hindsight, structured operational intelligence enables forward-looking decision support.
+          <p className="text-muted-foreground text-base leading-relaxed underline-offset-4 decoration-primary/30">
+            For manufacturing and industrial organisations, operational efficiency is no longer a reporting metric: it is a competitive advantage. Where static metrics provide hindsight, Zedral’s <span className="text-foreground font-medium">structured operational intelligence</span> enables forward-looking decision support that transforms how shopfloors operate.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Organizations gain deeper awareness of how efficiency evolves across time, shifts, and workflows.
+            By leveraging computer vision on existing CCTV cameras, we eliminate the need for expensive new hardware. This approach allows plant managers to gain deeper awareness of how efficiency evolves across time, shifts, and workflows, identifying production bottlenecks and workstation delays before they compromise output.
+          </p>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Our platform is designed to integrate seamlessly into modern industrial ecosystems, providing the clarity needed to strengthen production discipline and build long-term operational resilience across every workstation.
           </p>
         </motion.div>
       </div>
@@ -44,7 +47,7 @@ const MonitoringToIntelligence = () => (
         <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed text-center italic">
           "Efficiency is not about pressure. It is about precision. Zedral exists to help organizations operate with greater clarity, better coordination, and measured advancement in operational performance."
         </p>
-        <p className="mt-6 text-center text-sm text-muted-foreground">— The Zedral Philosophy</p>
+        <p className="mt-6 text-center text-sm text-muted-foreground">The Zedral Philosophy</p>
       </motion.div>
     </div>
   </section>

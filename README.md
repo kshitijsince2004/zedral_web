@@ -2,6 +2,9 @@
 
 Advanced operational intelligence platform for manufacturing and industrial environments.
 
+> [!TIP]
+> **New to Zedral?** Read our [About Zedral](ABOUT_ZEDRAL.md) overview for a full explanation of the platform, vision, and core features.
+
 ## 🚀 Quick Start
 
 ### Development

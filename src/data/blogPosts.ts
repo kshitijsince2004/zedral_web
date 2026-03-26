@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "Why Most Manufacturers Are Operating at 65% of Their True Production Potential",
     excerpt:
-      "Manufacturing organisations across India consistently underperform against their theoretical capacity — not because of machine limitations, but because of invisible inefficiencies embedded in manual workflows.",
+      "Manufacturing organisations across India consistently underperform against their theoretical capacity; not because of machine limitations, but because of invisible inefficiencies embedded in manual workflows.",
     author: "Zedral Team",
     date: "20 February 2026",
     dateISO: "2026-02-20",
@@ -66,16 +66,16 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Manufacturing organisations across India consistently underperform against their theoretical capacity — not because of machine limitations, but because of invisible inefficiencies embedded in manual workflows. The gap between what a factory can produce and what it actually produces is often staggering.",
+        text: "Manufacturing organisations across India consistently underperform against their theoretical capacity; not because of machine limitations, but because of invisible inefficiencies embedded in manual workflows. The gap between what a factory can produce and what it actually produces is often staggering.",
       },
       { type: "heading", text: "The 65% Reality" },
       {
         type: "paragraph",
-        text: "Studies across sectors — garments, electronics assembly, packaging, and automotive components — consistently show that most factories operate at roughly 65% of their theoretical capacity. This is not a failure of machinery. Machines, when maintained, perform at specification. The loss lives in the spaces between: changeover delays, unbalanced workstations, inconsistent operator pacing, and processes that nobody has formally measured in years.",
+        text: "Studies across sectors, garments, electronics assembly, packaging, and automotive components; consistently show that most factories operate at roughly 65% of their theoretical capacity. This is not a failure of machinery. Machines, when maintained, perform at specification. The loss lives in the spaces between: changeover delays, unbalanced workstations, inconsistent operator pacing, and processes that nobody has formally measured in years.",
       },
       {
         type: "paragraph",
-        text: "Line supervisors often know where the problems are. But without structured data, their observations remain anecdotal — easy to dismiss in planning meetings, impossible to quantify for leadership.",
+        text: "Line supervisors often know where the problems are. But without structured data, their observations remain anecdotal, easy to dismiss in planning meetings, impossible to quantify for leadership.",
       },
       { type: "image", src: featureBottleneck, alt: "Bottleneck detection illustration" },
       { type: "heading", text: "Where the Loss Hides" },
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
         type: "list",
         items: [
           "A workstation that takes 20% longer than its neighbours, creating a bottleneck nobody formally tracks.",
-          "Changeover procedures that vary by shift, adding 15–30 minutes of unplanned downtime daily.",
+          "Changeover procedures that vary by shift, adding 15 to 30 minutes of unplanned downtime daily.",
           "SOP deviations that go unnoticed because compliance is checked manually, if at all.",
           "Idle time between tasks that compounds across dozens of operators over a full shift.",
         ],
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "The Visibility Problem" },
       {
         type: "paragraph",
-        text: "The core issue is not that these problems are unsolvable — it is that they are invisible. Traditional monitoring gives you machine uptime and output counts. It does not tell you why Line 3 consistently underperforms on Tuesday afternoons, or why a particular workstation's cycle time drifts upward after lunch.",
+        text: "The core issue is not that these problems are unsolvable; it is that they are invisible. Traditional monitoring gives you machine uptime and output counts. It does not tell you why Line 3 consistently underperforms on Tuesday afternoons, or why a particular workstation's cycle time drifts upward after lunch.",
       },
       {
         type: "paragraph",
@@ -108,21 +108,21 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "From Data to Action" },
       {
         type: "paragraph",
-        text: 'Structured visibility changes the conversation. Instead of "we need to improve efficiency," teams can say: "Workstation 7 on Line 2 is our constraint — its average cycle time is 42 seconds against a target of 30, and it affects downstream throughput by 18%."',
+        text: 'Structured visibility changes the conversation. Instead of "we need to improve efficiency," teams can say: "Workstation 7 on Line 2 is our constraint, its average cycle time is 42 seconds against a target of 30, and it affects downstream throughput by 18%."',
       },
       {
         type: "paragraph",
-        text: "That specificity is what drives real improvement. It moves factories from reactive problem-solving to proactive optimisation — identifying issues before they compound, and measuring the impact of every change.",
+        text: "That specificity is what drives real improvement. It moves factories from reactive problem-solving to proactive optimisation, identifying issues before they compound, and measuring the impact of every change.",
       },
       { type: "image", src: featureYield, alt: "Yield improvement illustration" },
       { type: "heading", text: "The Path to Full Potential" },
       {
         type: "paragraph",
-        text: "No factory will operate at 100% — some loss is inherent in any physical process. But the jump from 65% to 80% or 85% represents a transformation in output, margin, and competitiveness. And it does not require new machines, new layouts, or more workers. It requires seeing what is actually happening on the line, shift by shift, station by station.",
+        text: "No factory will operate at 100%; some loss is inherent in any physical process. But the jump from 65% to 80% or 85% represents a transformation in output, margin, and competitiveness. And it does not require new machines, new layouts, or more workers. It requires seeing what is actually happening on the line, shift by shift, station by station.",
       },
       {
         type: "paragraph",
-        text: "That is the promise of operational intelligence: not more data, but the right data — structured, contextual, and immediately actionable.",
+        text: "That is the promise of operational intelligence: not more data, but the right data, structured, contextual, and immediately actionable.",
       },
     ],
   },
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     category: "AI & Technology",
     title: "How AI Vision Is Replacing Manual Shopfloor Observation",
     excerpt:
-      "For decades, the only way to understand what was happening on a factory floor was to walk it. AI-powered computer vision is changing that — giving production teams continuous, objective, and scalable visibility without a single extra person on the floor.",
+      "For decades, the only way to understand what was happening on a factory floor was to walk it. AI-powered computer vision is changing that, giving production teams continuous, objective, and scalable visibility without a single extra person on the floor.",
     author: "Zedral Team",
     date: "5 March 2026",
     dateISO: "2026-03-05",
@@ -143,19 +143,19 @@ export const blogPosts: BlogPost[] = [
     seo: {
       title: "How AI Vision Is Replacing Manual Shopfloor Observation",
       description:
-        "AI-powered computer vision gives production teams continuous, objective shopfloor visibility — replacing expensive, inconsistent manual observation with real-time data from existing cameras.",
+        "AI-powered computer vision gives production teams continuous, objective shopfloor visibility, replacing expensive, inconsistent manual observation with real-time data from existing cameras.",
       keywords:
         "AI vision manufacturing, computer vision shopfloor, AI monitoring factory, automated shopfloor observation, manufacturing AI India",
     },
     content: [
       {
         type: "paragraph",
-        text: "For decades, the only way to understand what was actually happening on a factory floor was to walk it. Time-motion studies, supervisor rounds, clipboard-based observations — all valuable in their time, but slow, expensive, and deeply subjective. AI-powered computer vision is changing that fundamentally.",
+        text: "For decades, the only way to understand what was actually happening on a factory floor was to walk it. Time-motion studies, supervisor rounds, clipboard-based observations, all valuable in their time, but slow, expensive, and deeply subjective. AI-powered computer vision is changing that fundamentally.",
       },
       { type: "heading", text: "The Limits of Manual Observation" },
       {
         type: "paragraph",
-        text: "Manual observation has three core problems that no amount of diligence can solve. First, it is not continuous — a supervisor can only watch one area at a time, and behaviour changes when people know they are being observed. Second, it is slow — time-motion studies take days to complete and produce a snapshot, not a live picture. Third, it does not scale — adding more observers adds cost, not accuracy.",
+        text: "Manual observation has three core problems that no amount of diligence can solve. First, it is not continuous, a supervisor can only watch one area at a time, and behaviour changes when people know they are being observed. Second, it is slow, time-motion studies take days to complete and produce a snapshot, not a live picture. Third, it does not scale, adding more observers adds cost, not accuracy.",
       },
       {
         type: "paragraph",
@@ -165,7 +165,7 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "What AI Vision Does Differently" },
       {
         type: "paragraph",
-        text: "AI vision systems use existing cameras — the same CCTV infrastructure most factories already have — and apply machine learning models to analyse activity in real time. Unlike manual observation, these systems work continuously across every shift, every line, every workstation simultaneously.",
+        text: "AI vision systems use existing cameras, the same CCTV infrastructure most factories already have, and apply machine learning models to analyse activity in real time. Unlike manual observation, these systems work continuously across every shift, every line, every workstation simultaneously.",
       },
       {
         type: "list",
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "Privacy and Practicality" },
       {
         type: "paragraph",
-        text: "A common concern is worker privacy. Well-designed AI vision systems address this directly — they detect and measure activity patterns rather than recording or storing identifiable video. The output is structured data: cycle times, workstation utilisation rates, idle percentages. No faces, no personal data, no surveillance footage.",
+        text: "A common concern is worker privacy. Well-designed AI vision systems address this directly, they detect and measure activity patterns rather than recording or storing identifiable video. The output is structured data: cycle times, workstation utilisation rates, idle percentages. No faces, no personal data, no surveillance footage.",
       },
       {
         type: "paragraph",
@@ -188,11 +188,11 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "From Observation to Action" },
       {
         type: "paragraph",
-        text: "The real value of AI vision is not the data itself — it is the speed at which insights reach the people who can act on them. When a workstation begins running slow, a supervisor sees it on their dashboard in real time, not in next week's report. When a changeover takes 40% longer than standard, the system flags it immediately.",
+        text: "The real value of AI vision is not the data itself, it is the speed at which insights reach the people who can act on them. When a workstation begins running slow, a supervisor sees it on their dashboard in real time, not in next week's report. When a changeover takes 40% longer than standard, the system flags it immediately.",
       },
       {
         type: "paragraph",
-        text: "This shift from reactive to proactive management is where factories find their efficiency gains — not in knowing what went wrong last month, but in catching it this shift.",
+        text: "This shift from reactive to proactive management is where factories find their efficiency gains, not in knowing what went wrong last month, but in catching it this shift.",
       },
     ],
   },
@@ -203,7 +203,7 @@ export const blogPosts: BlogPost[] = [
     category: "Operations",
     title: "The Hidden Cost of SOP Non-Compliance on Indian Factory Floors",
     excerpt:
-      "Standard Operating Procedures exist for a reason — but in most Indian factories, compliance is assumed rather than verified. The financial cost of that assumption is larger than most operations teams realise.",
+      "Standard Operating Procedures exist for a reason, but in most Indian factories, compliance is assumed rather than verified. The financial cost of that assumption is larger than most operations teams realise.",
     author: "Zedral Team",
     date: "12 March 2026",
     dateISO: "2026-03-12",
@@ -220,7 +220,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Standard Operating Procedures exist for a reason. They encode the best-known way to perform a task — the sequence, the timing, the quality checks — refined through experience and often through costly mistakes. Yet in most Indian factories, SOP compliance is assumed rather than verified. The result is a quiet, continuous drain on efficiency and quality that rarely appears on any dashboard.",
+        text: "Standard Operating Procedures exist for a reason. They encode the best-known way to perform a task, the sequence, the timing, the quality checks, refined through experience and often through costly mistakes. Yet in most Indian factories, SOP compliance is assumed rather than verified. The result is a quiet, continuous drain on efficiency and quality that rarely appears on any dashboard.",
       },
       { type: "heading", text: "Why Compliance Drifts" },
       {
@@ -240,29 +240,29 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "The Real Cost" },
       {
         type: "paragraph",
-        text: "The financial impact of SOP non-compliance shows up in three places — and only one of them is usually visible. Quality defects and rework are tracked because they produce a tangible output: rejected units, customer complaints, return costs. But the other two — inconsistent cycle times and accumulating micro-inefficiencies — rarely appear in any formal accounting.",
+        text: "The financial impact of SOP non-compliance shows up in three places, and only one of them is usually visible. Quality defects and rework are tracked because they produce a tangible output: rejected units, customer complaints, return costs. But the other two, inconsistent cycle times and accumulating micro-inefficiencies, rarely appear in any formal accounting.",
       },
       {
         type: "paragraph",
-        text: "Consider a garment factory where a stitching SOP specifies a 28-second cycle at a particular workstation. If 30% of operators are consistently running 35 seconds due to a procedural deviation, that single station loses roughly 20% of its throughput. Across a line of 40 stations running three shifts, the cumulative loss is substantial — and it never shows up as a line item.",
+        text: "Consider a garment factory where a stitching SOP specifies a 28-second cycle at a particular workstation. If 30% of operators are consistently running 35 seconds due to a procedural deviation, that single station loses roughly 20% of its throughput. Across a line of 40 stations running three shifts, the cumulative loss is substantial, and it never shows up as a line item.",
       },
       { type: "heading", text: "Verification at Scale" },
       {
         type: "paragraph",
-        text: "The traditional approach to compliance verification is audits — periodic checks by supervisors or quality teams. The problem is that audits are easily gamed, highly sampled, and expensive to run at meaningful frequency. A workstation that is checked once per shift can run non-compliant for the other seven hours without consequence.",
+        text: "The traditional approach to compliance verification is audits, periodic checks by supervisors or quality teams. The problem is that audits are easily gamed, highly sampled, and expensive to run at meaningful frequency. A workstation that is checked once per shift can run non-compliant for the other seven hours without consequence.",
       },
       {
         type: "paragraph",
-        text: "Continuous monitoring using AI vision changes this equation entirely. When every cycle at every workstation is observed and measured against expected parameters, deviation is caught immediately — not in the next audit. Supervisors receive alerts when a workstation's pattern diverges from its SOP baseline, allowing correction in real time rather than after the fact.",
+        text: "Continuous monitoring using AI vision changes this equation entirely. When every cycle at every workstation is observed and measured against expected parameters, deviation is caught immediately, not in the next audit. Supervisors receive alerts when a workstation's pattern diverges from its SOP baseline, allowing correction in real time rather than after the fact.",
       },
       { type: "heading", text: "Making Compliance Visible" },
       {
         type: "paragraph",
-        text: "The goal is not surveillance — it is consistency. Factories that achieve consistent SOP adherence do not just reduce defects. They also unlock the reliable baseline that process improvement requires: you cannot meaningfully improve a process until you know it is being executed as designed in the first place.",
+        text: "The goal is not surveillance, it is consistency. Factories that achieve consistent SOP adherence do not just reduce defects. They also unlock the reliable baseline that process improvement requires: you cannot meaningfully improve a process until you know it is being executed as designed in the first place.",
       },
       {
         type: "paragraph",
-        text: "This is what structured compliance visibility provides — not a tool for blame, but a foundation for genuine improvement.",
+        text: "This is what structured compliance visibility provides, not a tool for blame, but a foundation for genuine improvement.",
       },
     ],
   },
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
     title:
       "From Data to Decisions: What Operational Intelligence Means for Plant Managers",
     excerpt:
-      "Plant managers are data-rich and insight-poor. They receive reports on output volumes, machine downtime, and quality defects — but rarely on the human workflow layer where most efficiency is actually won or lost.",
+      "Plant managers are data-rich and insight-poor. They receive reports on output volumes, machine downtime, and quality defects, but rarely on the human workflow layer where most efficiency is actually won or lost.",
     author: "Zedral Team",
     date: "18 March 2026",
     dateISO: "2026-03-18",
@@ -296,17 +296,17 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "The Gap Between Data and Insight" },
       {
         type: "paragraph",
-        text: "The problem is not a lack of information — it is a lack of the right information. Most factory data systems are designed around machines and outputs, not around human workflow activity. They tell you how many units were produced and how long the line was down. They do not tell you which workstation slowed everything down, or why output on Line 4 is consistently 12% below target on evening shifts.",
+        text: "The problem is not a lack of information, it is a lack of the right information. Most factory data systems are designed around machines and outputs, not around human workflow activity. They tell you how many units were produced and how long the line was down. They do not tell you which workstation slowed everything down, or why output on Line 4 is consistently 12% below target on evening shifts.",
       },
       {
         type: "paragraph",
-        text: "This leaves plant managers making decisions based on intuition, supervisor reports, and retrospective data — all of which are valuable, but none of which give a real-time picture of what is happening at workstation level.",
+        text: "This leaves plant managers making decisions based on intuition, supervisor reports, and retrospective data, all of which are valuable, but none of which give a real-time picture of what is happening at workstation level.",
       },
       { type: "image", src: featureReports, alt: "Production efficiency reports illustration" },
       { type: "heading", text: "What Operational Intelligence Adds" },
       {
         type: "paragraph",
-        text: "Operational intelligence platforms fill the gap between machine-level data and human workflow reality. By monitoring workstation activity continuously — cycle times, idle periods, throughput rates — they give plant managers a live picture of where bottlenecks are forming, which lines are running below capacity, and where SOP compliance is drifting.",
+        text: "Operational intelligence platforms fill the gap between machine-level data and human workflow reality. By monitoring workstation activity continuously cycle times, idle periods, throughput rates, they give plant managers a live picture of where bottlenecks are forming, which lines are running below capacity, and where SOP compliance is drifting.",
       },
       {
         type: "list",
@@ -320,7 +320,7 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "Better Decisions, Faster" },
       {
         type: "paragraph",
-        text: "The operational value of this visibility is in decision speed. A plant manager who knows, at 10am, that Workstation 7 on Line 2 is running 40% over cycle time can redirect resource, adjust targets, or investigate the cause before the entire shift is lost. Without that visibility, the same problem surfaces in the afternoon meeting — hours after the damage is done.",
+        text: "The operational value of this visibility is in decision speed. A plant manager who knows, at 10am, that Workstation 7 on Line 2 is running 40% over cycle time can redirect resource, adjust targets, or investigate the cause before the entire shift is lost. Without that visibility, the same problem surfaces in the afternoon meeting, hours after the damage is done.",
       },
       {
         type: "paragraph",
@@ -329,7 +329,7 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", text: "The Manager's Role in an AI-Assisted Factory" },
       {
         type: "paragraph",
-        text: "Operational intelligence does not replace the judgement of experienced plant managers — it augments it. The system surfaces what is happening; the manager decides what to do about it. The combination of continuous data and human expertise is consistently more effective than either alone.",
+        text: "Operational intelligence does not replace the judgement of experienced plant managers, it augments it. The system surfaces what is happening; the manager decides what to do about it. The combination of continuous data and human expertise is consistently more effective than either alone.",
       },
       {
         type: "paragraph",
