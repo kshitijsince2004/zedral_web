@@ -22,8 +22,8 @@ interface SEOProps {
 
 const SEO = ({
   title = "Zedral — Operational Efficiency Intelligence for Modern Industry",
-  description = "Zedral is an AI-powered operational intelligence platform that helps manufacturing companies improve efficiency using computer vision on existing cameras — no new hardware required.",
-  keywords = "operational efficiency platform, manufacturing intelligence India, AI shopfloor monitoring, production bottleneck detection, SOP compliance tracking, workstation efficiency AI, factory floor AI, Industry 4.0 India, computer vision manufacturing, real-time production monitoring, manufacturing AI software India",
+  description = "Zedral is an operational intelligence platform that helps manufacturing companies improve efficiency through structured visibility and data-driven insights — no new hardware required.",
+  keywords = "Operational Intelligence India, Manufacturing AI platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, operational intelligence B2B, factory floor intelligence, production performance analysis, manufacturing analytics software India",
   image = "https://zedral.com/og-image.png",
   url = "https://zedral.com/",
   type = "website",

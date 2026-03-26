@@ -13,8 +13,8 @@ const homepageSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Zedral Operational Intelligence Platform",
-  "serviceType": "Manufacturing AI Software",
-  "description": "AI-powered shopfloor monitoring using computer vision on existing cameras. Real-time workstation activity tracking, bottleneck detection, and SOP compliance for Indian manufacturing.",
+  "serviceType": "Manufacturing AI — Operational Intelligence",
+  "description": "Zedral is a Manufacturing AI platform delivering Operational Intelligence, Bottleneck Detection, OEE improvement, and Compliance Management for Indian production floors. No new hardware required.",
   "provider": {
     "@type": "Organization",
     "name": "Zedral",
@@ -34,8 +34,8 @@ const Index = () => {
     <div className="bg-background min-h-screen">
       <SEO
         title="Zedral: Operational Efficiency Intelligence for Modern Industry"
-        description="Zedral uses AI and computer vision on your existing CCTV cameras to monitor workstations, detect production bottlenecks, and track SOP compliance in real time. No new hardware required."
-        keywords="operational efficiency platform, manufacturing intelligence India, AI shopfloor monitoring, production bottleneck detection, SOP compliance tracking, workstation efficiency AI, factory floor AI India, Industry 4.0 manufacturing, computer vision shopfloor, real-time production monitoring India, manufacturing analytics software, shopfloor monitoring system"
+        description="Zedral is a Manufacturing AI platform delivering Operational Intelligence for Indian production floors. Detect bottlenecks, improve OEE, track Compliance Management, and boost Production Efficiency — no new hardware required."
+        keywords="Operational Intelligence India, Manufacturing AI platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, factory floor intelligence India, manufacturing analytics software, production performance analysis"
         url="https://zedral.com/"
         jsonLd={homepageSchema}
       />

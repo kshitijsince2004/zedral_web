@@ -6,7 +6,7 @@ const items = [
   {
     icon: Eye,
     title: "Structured Visibility",
-    desc: "Gain complete visibility into operational movement and workflow patterns across every line and workstation.",
+    desc: "Gain complete visibility into operational movement and workflow patterns across every line and station.",
   },
   {
     icon: Brain,
@@ -42,7 +42,7 @@ const ValueProp = () => (
           Precision in Operations
         </h2>
         <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-          Modern operations generate immense activity, but limited clarity. Zedral bridges this gap.
+          Modern manufacturing generates immense activity but limited clarity. Zedral's Manufacturing AI bridges this gap with Operational Intelligence, OEE tracking, and Compliance Management.
         </p>
       </motion.div>
 
@@ -70,7 +70,7 @@ const ValueProp = () => (
         >
             <img
               src={valuePropIllustration}
-              alt="Industrial dashboard showing structured visibility and workstation activity patterns for operational intelligence"
+              alt="Zedral Manufacturing AI — Operational Intelligence platform showing OEE, Production Efficiency, and Bottleneck Detection for Industry 4.0"
               loading="lazy"
               className="w-full max-w-2xl h-auto mix-blend-multiply opacity-90"
             />

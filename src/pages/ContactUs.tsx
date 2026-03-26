@@ -86,7 +86,7 @@ const ContactUs = () => {
         title="Contact Zedral — Request a Demo or Get Support"
         description="Get in touch with Zedral. Request a free product demo, ask a technical question, or get support for your manufacturing intelligence platform. We respond within 1 business day."
         url="https://zedral.com/contact"
-        keywords="contact Zedral, request Zedral demo, manufacturing AI demo India, operational efficiency software contact, shopfloor monitoring demo, get in touch Zedral, Zedral support"
+        keywords="contact Zedral, request Zedral demo, Manufacturing AI demo India, Operational Intelligence software demo, OEE improvement demo, Bottleneck Detection platform, Compliance Management demo, Industry 4.0 manufacturing India"
         jsonLd={contactSchema}
       />
       <Navbar />

@@ -7,12 +7,12 @@ import featureCycle from "@/assets/feature-cycle.png";
 import featureBottleneck from "@/assets/feature-bottleneck.png";
 
 const features = [
-  { img: featureQuality, title: "Real-time Operational Visibility", desc: "Gain structured visibility into operational workflows as they happen across every station" },
-  { img: featureMetrics, title: "Precise Workspace Metrics", desc: "Measure and compare shift-level performance with precise workspace and line-specific metrics" },
-  { img: featureReports, title: "Automated Reports", desc: "Align your team by sending out daily automated whatsapp production reports" },
-  { img: featureYield, title: "Uncover Ideal Yield", desc: "Most Manufacturing companies run at only 65% of their true production potential" },
-  { img: featureCycle, title: "Cycle Time Analysis", desc: "Precise measurement of production cycle times for each workstation" },
-  { img: featureBottleneck, title: "Bottleneck Identification", desc: "Find bottlenecks and balance your line in minutes not hours with structured performance insights" },
+  { img: featureQuality, title: "Operational Intelligence", desc: "Gain structured Operational Intelligence into workflows as they happen — every station, every shift, in real time" },
+  { img: featureMetrics, title: "OEE & Line Performance", desc: "Measure Overall Equipment Effectiveness and compare shift-level Production Efficiency with precise, station-specific metrics" },
+  { img: featureReports, title: "Automated Production Reports", desc: "Align your team with daily automated WhatsApp and dashboard production efficiency reports" },
+  { img: featureYield, title: "Production Efficiency Gains", desc: "Most manufacturing companies run at only 65% of true capacity — unlock the remaining potential with Manufacturing AI" },
+  { img: featureCycle, title: "Industry 4.0 Process Analysis", desc: "Precise Industry 4.0-grade measurement of production process times and cycle efficiency for each station" },
+  { img: featureBottleneck, title: "Bottleneck Detection", desc: "Automatically surface bottlenecks and balance your line in minutes using structured Compliance Management insights" },
 ];
 
 const container = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
@@ -28,7 +28,7 @@ const Features = () => (
       className="text-center mb-16"
     >
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight leading-tight">
-        Capabilities that drive<br className="hidden md:block" /> factories of the future
+        Manufacturing AI capabilities that drive<br className="hidden md:block" /> Industry 4.0 factories
       </h2>
     </motion.div>
 
@@ -43,7 +43,7 @@ const Features = () => (
         <motion.div key={title} variants={item} className="text-center">
           <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto mb-6">{desc}</p>
-          <img src={img} alt={`${title} - Zedral Operational Intelligence`} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
+          <img src={img} alt={`${title} — Zedral Manufacturing AI & Operational Intelligence Platform`} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
         </motion.div>
       ))}
     </motion.div>

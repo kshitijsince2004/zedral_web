@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { trackEmailSignup } from "@/utils/analytics";
 
-const badges = ["Structured visibility", "Measured identification", "Data-backed decisions"];
+const badges = ["OEE Improvement", "Bottleneck Detection", "Compliance Management"];
 
 // Floating particles (no mouse interaction)
 const FloatingParticles = () => {
@@ -98,7 +98,7 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <img
             src={heroIllustration}
-            alt="Zedral cloud-based operational intelligence platform dashboard showing real-time manufacturing telemetry"
+            alt="Zedral Manufacturing AI platform dashboard — Operational Intelligence for OEE, Bottleneck Detection, and Compliance Management in Indian manufacturing"
             loading="eager"
             className="w-full h-full object-cover opacity-[0.10]"
           />
@@ -140,7 +140,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-6 text-base md:text-lg text-primary-foreground/70 max-w-xl mx-auto leading-relaxed"
           >
-            Operational efficiency is no longer a reporting metric. It is a competitive advantage.
+            Manufacturing AI that turns your existing infrastructure into Operational Intelligence — driving OEE, Bottleneck Detection, and Compliance Management across every shift.
           </motion.p>
 
           <motion.div

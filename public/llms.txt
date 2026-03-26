@@ -1,25 +1,25 @@
-# Zedral - Operational Efficiency Intelligence for Modern Industry
+# Zedral — Manufacturing AI & Operational Intelligence for Indian Industry
 
-Zedral is an AI-powered operational intelligence platform that helps manufacturing and industrial companies achieve measurable efficiency gains by making shopfloor activity visible, structured, and actionable.
+Zedral is a Manufacturing AI platform that delivers Operational Intelligence for Indian manufacturing and industrial companies. It drives measurable Production Efficiency gains through Bottleneck Detection, OEE (Overall Equipment Effectiveness) improvement, and Compliance Management — using existing infrastructure, no new hardware required.
 
 
 ## What is Zedral?
 
-Zedral is a B2B SaaS platform designed for manufacturing companies, particularly in India, that want to improve operational efficiency without expensive hardware upgrades or complex ERP integrations.
+Zedral is a B2B SaaS platform built for Indian manufacturing companies that want to improve Production Efficiency and achieve Industry 4.0 operational maturity without expensive hardware upgrades or complex ERP integrations.
 
-Zedral uses computer vision applied to existing CCTV cameras on the factory floor to monitor workstation activity, detect bottlenecks, track SOP compliance, and generate real-time efficiency reports for production managers and leadership teams.
-
-The platform works without any new hardware. Existing IP cameras or analog CCTV systems are sufficient.
+Zedral's Manufacturing AI analyses existing industrial infrastructure in real time to deliver Operational Intelligence: Bottleneck Detection, OEE metrics, Compliance Management, and shift-level Production Efficiency reports for plant managers and operations leadership.
 
 
-## Core Product Features
+## Core Product Capabilities
 
-- Real-time Workstation Monitoring: Tracks activity and idle time at each workstation automatically using AI vision, eliminating the need for manual observation or time-motion studies.
-- Bottleneck Detection: Identifies which workstations are constraining throughput, with data broken down by shift, line, and operator role.
-- SOP Compliance Tracking: Flags deviations from standard operating procedures by comparing observed behaviour against expected patterns.
-- Production Efficiency Reports: Delivers shift-level and line-level efficiency metrics directly to plant managers via dashboard and automated reports.
-- No New Hardware Required: Integrates with existing camera infrastructure; no IoT sensors or new equipment needed.
-- Designed for Indian Manufacturing: Built specifically for the operational realities of Indian shopfloors, mixed-skill workforces, informal workflows, and legacy infrastructure.
+- **Operational Intelligence**: Structured visibility into workflows as they happen — every station, every shift.
+- **OEE Improvement**: Measure Overall Equipment Effectiveness and compare shift-level Production Efficiency with precise, station-specific metrics.
+- **Bottleneck Detection**: Automatically surface production bottlenecks and balance lines in minutes using Manufacturing AI.
+- **Compliance Management**: Track SOP adherence continuously without manual checks — flag deviations in real time.
+- **Industry 4.0 Process Analysis**: Precise measurement of production process times and cycle efficiency at every station.
+- **Automated Production Reports**: Daily WhatsApp and dashboard Production Efficiency reports delivered directly to plant managers.
+- **No New Hardware Required**: Integrates with existing infrastructure; no IoT sensors or new equipment needed.
+- **Designed for Indian Manufacturing**: Built specifically for the operational realities of Indian production floors — mixed-skill workforces, legacy infrastructure, and informal workflows.
 
 
 ## Target Users
@@ -27,76 +27,92 @@ The platform works without any new hardware. Existing IP cameras or analog CCTV 
 - Plant Managers and Production Heads in manufacturing companies
 - Operations Directors and COOs in industrial businesses
 - Factory owners in sectors: garments, electronics assembly, automotive components, packaging, FMCG
-- Industrial engineers conducting time-motion studies and efficiency audits
+- Industrial engineers conducting efficiency audits and Industry 4.0 assessments
 
 
 ## Key Business Problems Zedral Solves
 
-1. Most Indian manufacturers operate at 60-70% of theoretical production capacity due to invisible workflow inefficiencies.
-2. Traditional monitoring only tracks machine uptime, not human workflow activity.
-3. Manual observation (clipboards, supervisors) is expensive, inconsistent, and unscalable.
-4. Production managers lack real-time data to identify and act on bottlenecks during a shift.
-5. SOP non-compliance is difficult to detect without continuous surveillance.
+1. Most Indian manufacturers operate at 60–70% of theoretical production capacity due to invisible workflow inefficiencies — Zedral's OEE tracking closes this gap.
+2. Traditional reporting tracks machine uptime but not human workflow activity — Zedral's Manufacturing AI fills this blind spot.
+3. Manual observation is expensive, inconsistent, and unscalable — Zedral's Operational Intelligence replaces it continuously.
+4. Production managers lack real-time Bottleneck Detection data to act on constraints during a shift.
+5. Compliance Management is assumed rather than verified — Zedral makes it continuous and automatic.
 
 
 ## Technology
 
-Zedral uses computer vision and AI models to analyse video feeds from existing cameras in real time. The system identifies workers and workstations, tracks activity cycles, and calculates efficiency metrics. No personally identifiable information is stored; the system works with anonymised positional data.
+Zedral applies Manufacturing AI and structured analysis to activity data from existing industrial infrastructure in real time. The system performs Bottleneck Detection, calculates OEE metrics, tracks Compliance Management, and delivers Production Efficiency reports. No personally identifiable information is stored; the system works with anonymised positional and activity data. Industry 4.0 compliant by design.
+
+
+## Social Media & Cross-Platform Presence
+
+- LinkedIn: https://www.linkedin.com/company/zedral
+- Instagram: https://www.instagram.com/zedral.in/
+- Twitter / X: https://twitter.com/ZedralHQ
 
 
 ## Company Information
 
 - Company: Zedral
 - Website: https://zedral.com
-- Contact: https://zedral.com/contact
-- Blog / Insights: https://zedral.com/news
+- Contact / Demo: https://zedral.com/contact
+- Insights Blog: https://zedral.com/news
 - Careers: https://zedral.com/careers
 - Privacy Policy: https://zedral.com/privacy
 - Founded: 2025
 - Headquarters: India
-- Industry: Manufacturing Technology, Industrial AI, Operational Intelligence
+- Industry: Manufacturing AI, Operational Intelligence, Industry 4.0
 
 
 ## Blog Articles (Insights)
 
 - Why Most Manufacturers Are Operating at 65% of Their True Production Potential
   URL: https://zedral.com/news/manufacturers-operating-at-65-percent
-  Summary: Explores the gap between theoretical and actual production capacity, and how structured visibility closes it.
+  Tags: Operational Intelligence, Manufacturing AI, Production Efficiency, Bottleneck Detection, OEE, Industry 4.0
+  Summary: Explores the gap between theoretical and actual production capacity, and how structured Operational Intelligence and Bottleneck Detection close it.
 
-- How AI Vision Is Replacing Manual Shopfloor Observation
-  URL: https://zedral.com/news/ai-vision-replacing-manual-shopfloor-observation
-  Summary: AI-powered computer vision gives production teams continuous, objective shopfloor visibility — replacing expensive, inconsistent manual observation with real-time data from existing cameras.
+- How Operational Intelligence Is Replacing Manual Floor Observation
+  URL: https://zedral.com/news/operational-visibility-replacing-manual-floor-observation
+  Tags: Operational Intelligence, Manufacturing AI, Production Efficiency, Industry 4.0, OEE
+  Summary: Manufacturing AI-driven Operational Intelligence gives production teams continuous, objective floor visibility — replacing expensive, inconsistent manual observation.
 
-- The Hidden Cost of SOP Non-Compliance on Indian Factory Floors
-  URL: https://zedral.com/news/hidden-cost-of-sop-non-compliance-indian-factories
-  Summary: SOP compliance is assumed rather than verified in most Indian factories. Quantifies the real financial cost and explains how continuous monitoring changes the equation.
+- The Hidden Cost of Process Non-Compliance on Indian Factory Floors
+  URL: https://zedral.com/news/hidden-cost-of-process-non-compliance-indian-factories
+  Tags: Compliance Management, Operational Intelligence, Manufacturing AI, Production Efficiency, OEE, Industry 4.0
+  Summary: Compliance Management is assumed rather than verified in most Indian factories. Quantifies the real financial cost and explains how continuous Operational Intelligence changes the equation.
 
 - From Data to Decisions: What Operational Intelligence Means for Plant Managers
   URL: https://zedral.com/news/operational-intelligence-for-plant-managers
-  Summary: Plant managers are data-rich but insight-poor. Operational intelligence platforms give them workstation-level visibility to make faster, more accurate production decisions.
+  Tags: Operational Intelligence, Manufacturing AI, OEE, Bottleneck Detection, Production Efficiency, Industry 4.0
+  Summary: Plant managers are data-rich but insight-poor. Zedral's Manufacturing AI and Operational Intelligence give them OEE and Bottleneck Detection data to make faster, more accurate production decisions.
 
 
 ## Frequently Asked Questions
 
 Q: What hardware does Zedral require?
-A: No new hardware. Zedral works with existing CCTV or IP cameras already installed on the shopfloor.
+A: No new hardware. Zedral's Manufacturing AI works with existing infrastructure already installed on the production floor.
+
+Q: How does Zedral improve OEE and Production Efficiency?
+A: Zedral analyses existing infrastructure to deliver Operational Intelligence — performing Bottleneck Detection, calculating OEE metrics, and enforcing Compliance Management in real time during every shift.
 
 Q: Is Zedral suitable for small factories?
-A: Yes. Zedral is designed for a range of factory sizes and budgets, with deployment that scales from a single production line to multi-facility operations.
+A: Yes. Zedral is designed for a range of factory sizes, with Industry 4.0 Operational Intelligence that scales from a single production line to multi-facility operations.
 
-Q: Does Zedral store video footage?
-A: Zedral processes video to extract anonymised activity data. Raw footage is not stored in the cloud by default.
+Q: Does Zedral store raw operational data?
+A: Zedral processes data streams to extract anonymised activity metrics for OEE and Production Efficiency analysis. Raw feeds are not stored.
 
 Q: How long does implementation take?
-A: A typical initial deployment on one production line can be operational within days, not months.
+A: A typical initial deployment delivering Operational Intelligence on one production line can be operational within days, not months.
 
 Q: What industries does Zedral serve?
-A: Primarily manufacturing sectors including garments and apparel, electronics assembly, automotive components, packaging, and FMCG.
+A: Primarily manufacturing sectors including garments and apparel, electronics assembly, automotive components, packaging, and FMCG — with Industry 4.0 Operational Intelligence across all sectors.
 
 Q: How is Zedral different from ERP or MES systems?
-A: ERP and MES systems record transactions and outputs. Zedral observes and measures the actual physical work happening in real time - the human activity layer that ERP cannot see.
+A: ERP and MES systems record transactions and outputs. Zedral's Manufacturing AI observes and measures actual physical work — delivering Bottleneck Detection, OEE, and Compliance Management at the human activity layer that ERP cannot see.
 
 
 ## Contact and Demo
 
 To learn more or request a product demo, visit: https://zedral.com/contact
+Follow us on LinkedIn: https://www.linkedin.com/company/zedral
+Follow us on Instagram: https://www.instagram.com/zedral.in/
