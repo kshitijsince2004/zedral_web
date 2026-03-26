@@ -279,8 +279,8 @@ const BlogDetail = () => {
                   Ready to uncover your factory's hidden potential?
                 </h3>
                 <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
-                  Zedral gives you workstation-level visibility from your existing
-                  cameras, no new hardware, no disruption.
+                  Zedral gives you station-level visibility from your existing
+                  infrastructure, no new hardware, no disruption.
                 </p>
                 <Link
                   to="/contact"

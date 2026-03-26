@@ -11,7 +11,7 @@ const MonitoringToIntelligence = () => (
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
-            A Shift from Monitoring to Intelligence
+            A Shift to Operational Intelligence
           </h2>
         </motion.div>
 
@@ -23,16 +23,16 @@ const MonitoringToIntelligence = () => (
           className="space-y-6"
         >
           <p className="text-muted-foreground text-base leading-relaxed">
-            Traditional monitoring observes. <span className="text-foreground font-semibold">Zedral interprets.</span>
+            Traditional systems observe. <span className="text-foreground font-semibold">Zedral interprets.</span>
           </p>
           <p className="text-muted-foreground text-base leading-relaxed underline-offset-4 decoration-primary/30">
-            For manufacturing and industrial organisations, operational efficiency is no longer a reporting metric: it is a competitive advantage. Where static metrics provide hindsight, Zedral’s <span className="text-foreground font-medium">structured operational intelligence</span> enables forward-looking decision support that transforms how shopfloors operate.
+            For manufacturing and industrial organisations, operational efficiency is no longer a reporting metric: it is a competitive advantage. Where static metrics provide hindsight, Zedral’s <span className="text-foreground font-medium">Manufacturing AI platform</span> enables forward-looking Operational Intelligence that transforms how production floors operate — delivering measurable OEE improvement and Compliance Management without new hardware.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            By leveraging computer vision on existing CCTV cameras, we eliminate the need for expensive new hardware. This approach allows plant managers to gain deeper awareness of how efficiency evolves across time, shifts, and workflows, identifying production bottlenecks and workstation delays before they compromise output.
+            By integrating with existing industrial infrastructure, we eliminate the need for expensive new hardware. This approach gives plant managers structured visibility into Production Efficiency — automatically surfacing Bottleneck Detection insights and station-level delay signals before they compromise output.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Our platform is designed to integrate seamlessly into modern industrial ecosystems, providing the clarity needed to strengthen production discipline and build long-term operational resilience across every workstation.
+            Our platform is designed to integrate seamlessly into modern industrial ecosystems, providing the clarity needed to strengthen production discipline and build long-term operational resilience across every line.
           </p>
         </motion.div>
       </div>

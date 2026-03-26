@@ -24,7 +24,7 @@ const NewsBlog = () => {
     "@type": "Blog",
     "name": "Zedral Insights",
     "description":
-      "Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations.",
+      "Expert perspectives on manufacturing intelligence, production efficiency, and the future of industrial operations.",
     "url": "https://zedral.com/news",
     "publisher": {
       "@type": "Organization",
@@ -44,8 +44,8 @@ const NewsBlog = () => {
     <div className="min-h-screen">
       <SEO
         title="Insights & News: Manufacturing Intelligence | Zedral"
-        description="Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations from the Zedral team."
-        keywords="manufacturing intelligence blog, AI shopfloor insights, operational efficiency articles, production optimization tips, Indian manufacturing technology"
+        description="Expert perspectives on manufacturing intelligence, production efficiency, and the future of industrial operations from the Zedral team."
+        keywords="Operational Intelligence blog, Manufacturing AI insights, Production Efficiency articles, OEE manufacturing India, Bottleneck Detection articles, Compliance Management manufacturing, Industry 4.0 insights India"
         url="https://zedral.com/news"
         jsonLd={[breadcrumbSchema, blogSchema]}
       />
@@ -93,7 +93,7 @@ const NewsBlog = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-sm md:text-base text-primary-foreground/50 max-w-xl leading-relaxed"
             >
-              Expert perspectives on AI in manufacturing, production efficiency,
+              Expert perspectives on manufacturing intelligence, production efficiency,
               and the future of industrial operations, from the Zedral team.
             </motion.p>
           </div>

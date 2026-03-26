@@ -54,7 +54,7 @@ const domains: DomainDetail[] = [
       "Design and train supervised and unsupervised models on operational and production data",
       "Build and maintain ML training pipelines and experiment tracking infrastructure",
       "Optimise models for inference latency in edge and cloud environments",
-      "Work directly with computer vision engineers to integrate perception outputs into ML workflows",
+      "Work directly with vision engineers to integrate perception outputs into ML workflows",
       "Define evaluation metrics that reflect real operational impact, not just benchmark scores",
       "Iterate rapidly with customer feedback to improve model accuracy over time",
     ],
@@ -67,21 +67,21 @@ const domains: DomainDetail[] = [
     ],
   },
   {
-    title: "Computer Vision Engineer",
+    title: "Vision Engineering",
     subtitle: "Video understanding · Object detection · Real-time perception",
     icon: domainVision,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the vision layer that turns raw camera streams into structured operational intelligence. This is the most technically challenging part of Zedral, understanding what workers are doing, detecting process deviations, and counting production output from standard IP camera footage in real time. You will work on problems that have no off-the-shelf solution.",
+    role: "You will build the perception layer that turns raw video streams into structured operational intelligence. This is the most technically challenging part of Zedral — understanding what is happening on the production floor, detecting process deviations, and counting output from standard video feeds in real time. You will work on problems that have no off-the-shelf solution.",
     tasks: [
-      "Build and fine-tune object detection, tracking, and activity recognition models for factory environments",
+      "Build and fine-tune object detection, tracking, and activity recognition models for industrial environments",
       "Design video processing pipelines that run efficiently on edge hardware and cloud",
       "Develop annotation strategies and train custom datasets on industrial operations",
-      "Implement action recognition and pose estimation for SOP compliance monitoring",
+      "Implement activity recognition and pose estimation for process compliance",
       "Optimise inference pipelines to meet real-time latency requirements (<5 seconds)",
-      "Handle challenging conditions: occlusion, low light, camera angle variation, cluttered backgrounds",
+      "Handle challenging conditions: occlusion, low light, angle variation, cluttered backgrounds",
     ],
-    coreSkills: ["Python", "OpenCV", "PyTorch", "YOLOv8 / YOLO variants", "Object Detection", "Object Tracking", "RTSP / video streaming", "DeepSORT / ByteTrack", "TensorRT", "Action Recognition", "Pose Estimation (MediaPipe / OpenPose)", "Dataset annotation (CVAT, Roboflow)"],
-    bonusSkills: ["NVIDIA Jetson deployment", "Multi-camera synchronisation", "Video segmentation", "Optical flow"],
+    coreSkills: ["Python", "OpenCV", "PyTorch", "YOLOv8 / YOLO variants", "Object Detection", "Object Tracking", "RTSP / video streaming", "DeepSORT / ByteTrack", "TensorRT", "Activity Recognition", "Pose Estimation (MediaPipe / OpenPose)", "Dataset annotation (CVAT, Roboflow)"],
+    bonusSkills: ["Edge deployment", "Multi-stream synchronisation", "Video segmentation", "Optical flow"],
     fitIf: [
       "You have built vision systems that run in real environments, not just benchmark datasets",
       "You obsess over latency, false positive rates, and robustness",
@@ -93,10 +93,10 @@ const domains: DomainDetail[] = [
     subtitle: "APIs · Data pipelines · Real-time systems",
     icon: domainBackend,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the backend systems that power everything Zedral does: from ingesting video-derived events in real time, to storing structured operational data, to serving it through APIs that the dashboard and customer integrations depend on. Performance, reliability, and clean architecture matter here. You will be the first backend engineer at Zedral, which means the decisions you make now will define the system for years.",
+    role: "You will build the backend systems that power everything Zedral does: from ingesting operational events in real time, to storing structured operational data, to serving it through APIs that the dashboard and customer integrations depend on. Performance, reliability, and clean architecture matter here. You will be the first backend engineer at Zedral, which means the decisions you make now will define the system for years.",
     tasks: [
       "Design and build APIs that serve real-time and historical operational intelligence to the frontend",
-      "Build event-driven data pipelines that ingest high-frequency operational events from vision systems",
+      "Build event-driven data pipelines that ingest high-frequency operational events from perception systems",
       "Design data schemas for storing time-series production metrics, alerts, and performance records",
       "Implement authentication, role-based access control, and multi-tenancy for enterprise customers",
       "Build automated report generation and WhatsApp/email notification systems",
@@ -118,7 +118,7 @@ const domains: DomainDetail[] = [
     role: "You will build the Zedral dashboard, the surface through which factory managers, production heads, and operators interact with everything we generate. This is not a simple CRUD app. It is a real-time operational intelligence interface that must be fast, clear, and intuitive enough for a factory floor supervisor to act on in seconds. Design sensibility matters as much as engineering ability here.",
     tasks: [
       "Build the core Zedral dashboard with real-time metrics, charts, and live production feeds",
-      "Implement live data visualisations for operator performance, line efficiency, and bottleneck alerts",
+      "Implement live data visualisations for operator performance, line efficiency, and constraint alerts",
       "Build WebSocket-powered real-time update systems that reflect factory state as it happens",
       "Design and implement role-based views for operators, supervisors, production heads, and management",
       "Build responsive interfaces that work on both desktop and large-format factory floor displays",
@@ -247,14 +247,14 @@ const jobPostingSchemas = [
     "validThrough": "2026-12-31",
     "url": "https://zedral.com/careers",
     "skills": "Python, PyTorch, Scikit-learn, Time-Series Analysis, MLflow, ONNX, TensorFlow",
-    "industry": "Manufacturing Technology / AI",
+    "industry": "Manufacturing Technology",
     "occupationalCategory": "15-1299.09"
   },
   {
     "@context": "https://schema.org",
     "@type": "JobPosting",
-    "title": "Computer Vision Engineer",
-    "description": "Build the vision layer that turns raw camera streams into structured operational intelligence. Build and fine-tune object detection, tracking, and activity recognition models for factory environments.",
+    "title": "Vision Engineer",
+    "description": "Build the perception layer that turns raw video streams into structured operational intelligence. Build and fine-tune object detection, tracking, and activity recognition models for industrial environments.",
     "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
     "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
     "employmentType": "FULL_TIME",
@@ -265,14 +265,14 @@ const jobPostingSchemas = [
     "validThrough": "2026-12-31",
     "url": "https://zedral.com/careers",
     "skills": "Python, OpenCV, PyTorch, YOLOv8, Object Detection, TensorRT, RTSP video streaming",
-    "industry": "Manufacturing Technology / AI",
+    "industry": "Manufacturing Technology",
     "occupationalCategory": "15-1299.09"
   },
   {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title": "Backend Engineer",
-    "description": "Build backend systems that power Zedral — from ingesting video-derived events in real time to storing structured operational data and serving APIs to the dashboard and customer integrations.",
+    "description": "Build backend systems that power Zedral — from ingesting operational events in real time to storing structured operational data and serving APIs to the dashboard and customer integrations.",
     "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
     "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
     "employmentType": "FULL_TIME",
@@ -283,7 +283,7 @@ const jobPostingSchemas = [
     "validThrough": "2026-12-31",
     "url": "https://zedral.com/careers",
     "skills": "Python, FastAPI, PostgreSQL, Redis, WebSockets, Docker, Kafka, TimescaleDB, AWS",
-    "industry": "Manufacturing Technology / AI",
+    "industry": "Manufacturing Technology",
     "occupationalCategory": "15-1299.09"
   },
   {
@@ -301,7 +301,7 @@ const jobPostingSchemas = [
     "validThrough": "2026-12-31",
     "url": "https://zedral.com/careers",
     "skills": "React, TypeScript, Tailwind CSS, WebSockets, Recharts, Vite, TanStack Query, Framer Motion",
-    "industry": "Manufacturing Technology / AI",
+    "industry": "Manufacturing Technology",
     "occupationalCategory": "15-1299.09"
   }
 ];
@@ -321,9 +321,9 @@ const Careers = () => {
   return (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Careers at Zedral: Build AI for Indian Manufacturing"
-      description="Join Zedral and build AI-powered operational intelligence for Indian manufacturing. Open roles in Machine Learning, Computer Vision, Backend, and Full-Stack engineering. Based in India."
-      keywords="careers at Zedral, manufacturing AI jobs India, computer vision engineer jobs India, ML engineer manufacturing startup, AI startup jobs India, operational intelligence careers, machine learning jobs India, backend engineer manufacturing AI, full stack engineer India startup, tech jobs India 2025"
+      title="Careers at Zedral — Build Operational Intelligence for Indian Manufacturing"
+      description="Join Zedral and build operational intelligence for Indian manufacturing. Open roles in Machine Learning, Vision Engineering, Backend, and Full-Stack engineering. Based in India."
+      keywords="careers at Zedral, Manufacturing AI jobs India, Operational Intelligence careers, OEE software engineer India, Bottleneck Detection ML engineer, Industry 4.0 startup jobs India, Compliance Management tech careers, machine learning manufacturing India"
       url="https://zedral.com/careers"
       jsonLd={[breadcrumbSchema, ...jobPostingSchemas]}
     />
