@@ -18,6 +18,9 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
+    // Target ES2019 so react-snap's bundled Chromium can execute the output JS
+    // (older Chromium doesn't support optional chaining ?. which is ES2020+)
+    target: "es2019",
     rollupOptions: {
       output: {
         entryFileNames: "assets/[name]-[hash].js",

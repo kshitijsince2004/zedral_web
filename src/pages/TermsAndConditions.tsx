@@ -41,10 +41,10 @@ const sections = [
         <ul className="list-disc pl-5 space-y-1 mb-3">
           <li>Real-time operational visibility and workflow monitoring</li>
           <li>Workflow performance analysis and process variability identification</li>
-          <li>Production line optimisation and bottleneck detection</li>
+          <li>Production line optimisation and constraint detection</li>
           <li>Shift-level performance awareness and throughput alignment</li>
           <li>Structured performance insights and automated reporting</li>
-          <li>Integration capabilities with existing manufacturing execution systems and industrial monitoring infrastructure</li>
+          <li>Integration capabilities with existing manufacturing execution systems and industrial infrastructure</li>
         </ul>
         <p>Zedral is a decision-support tool. Operational decisions remain entirely at the discretion of the Client. Zedral does not guarantee specific operational outcomes, production targets, or business results.</p>
       </>

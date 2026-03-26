@@ -12,7 +12,7 @@ const testimonials = [
     name: "Jenny Wilson",
     company: "Starbucks",
     initials: "JW",
-    quote: "The seamless integration into our existing systems was impressive. Within weeks, we identified bottlenecks that had been costing us 15% throughput efficiency.",
+    quote: "The seamless integration into our existing systems was impressive. Within weeks, we identified constraints that had been costing us 15% throughput efficiency.",
   },
   {
     name: "Albert Flores",

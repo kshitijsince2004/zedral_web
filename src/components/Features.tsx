@@ -8,11 +8,11 @@ import featureBottleneck from "@/assets/feature-bottleneck.png";
 
 const features = [
   { img: featureQuality, title: "Real-time Operational Visibility", desc: "Gain structured visibility into operational workflows as they happen across every station" },
-  { img: featureMetrics, title: "Precise Workspace Metrics", desc: "Measure and compare shift-level performance with precise workspace and line-specific metrics" },
+  { img: featureMetrics, title: "Precise Line Metrics", desc: "Measure and compare shift-level performance with precise line and station-specific metrics" },
   { img: featureReports, title: "Automated Reports", desc: "Align your team by sending out daily automated whatsapp production reports" },
   { img: featureYield, title: "Uncover Ideal Yield", desc: "Most Manufacturing companies run at only 65% of their true production potential" },
-  { img: featureCycle, title: "Cycle Time Analysis", desc: "Precise measurement of production cycle times for each workstation" },
-  { img: featureBottleneck, title: "Bottleneck Identification", desc: "Find bottlenecks and balance your line in minutes not hours with structured performance insights" },
+  { img: featureCycle, title: "Process Time Analysis", desc: "Precise measurement of production process times for each station" },
+  { img: featureBottleneck, title: "Constraint Identification", desc: "Find constraints and balance your line in minutes not hours with structured performance insights" },
 ];
 
 const container = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };

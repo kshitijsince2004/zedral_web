@@ -1,25 +1,25 @@
 # Zedral - Operational Efficiency Intelligence for Modern Industry
 
-Zedral is an AI-powered operational intelligence platform that helps manufacturing and industrial companies achieve measurable efficiency gains by making shopfloor activity visible, structured, and actionable.
+Zedral is an operational intelligence platform that helps manufacturing and industrial companies achieve measurable efficiency gains by making production floor activity visible, structured, and actionable.
 
 
 ## What is Zedral?
 
 Zedral is a B2B SaaS platform designed for manufacturing companies, particularly in India, that want to improve operational efficiency without expensive hardware upgrades or complex ERP integrations.
 
-Zedral uses computer vision applied to existing CCTV cameras on the factory floor to monitor workstation activity, detect bottlenecks, track SOP compliance, and generate real-time efficiency reports for production managers and leadership teams.
+Zedral integrates with existing industrial infrastructure to observe station activity, detect production constraints, track process compliance, and generate real-time efficiency reports for production managers and leadership teams.
 
-The platform works without any new hardware. Existing IP cameras or analog CCTV systems are sufficient.
+The platform works without any new hardware. Existing infrastructure is sufficient.
 
 
 ## Core Product Features
 
-- Real-time Workstation Monitoring: Tracks activity and idle time at each workstation automatically using AI vision, eliminating the need for manual observation or time-motion studies.
-- Bottleneck Detection: Identifies which workstations are constraining throughput, with data broken down by shift, line, and operator role.
-- SOP Compliance Tracking: Flags deviations from standard operating procedures by comparing observed behaviour against expected patterns.
+- Real-time Station Observation: Tracks activity and idle time at each station automatically, eliminating the need for manual observation or time-motion studies.
+- Constraint Detection: Identifies which stations are constraining throughput, with data broken down by shift, line, and operator role.
+- Process Compliance Tracking: Flags deviations from standard operating procedures by comparing observed behaviour against expected patterns.
 - Production Efficiency Reports: Delivers shift-level and line-level efficiency metrics directly to plant managers via dashboard and automated reports.
-- No New Hardware Required: Integrates with existing camera infrastructure; no IoT sensors or new equipment needed.
-- Designed for Indian Manufacturing: Built specifically for the operational realities of Indian shopfloors, mixed-skill workforces, informal workflows, and legacy infrastructure.
+- No New Hardware Required: Integrates with existing infrastructure; no IoT sensors or new equipment needed.
+- Designed for Indian Manufacturing: Built specifically for the operational realities of Indian production floors, mixed-skill workforces, informal workflows, and legacy infrastructure.
 
 
 ## Target Users
@@ -33,15 +33,15 @@ The platform works without any new hardware. Existing IP cameras or analog CCTV 
 ## Key Business Problems Zedral Solves
 
 1. Most Indian manufacturers operate at 60-70% of theoretical production capacity due to invisible workflow inefficiencies.
-2. Traditional monitoring only tracks machine uptime, not human workflow activity.
+2. Traditional reporting only tracks machine uptime, not human workflow activity.
 3. Manual observation (clipboards, supervisors) is expensive, inconsistent, and unscalable.
-4. Production managers lack real-time data to identify and act on bottlenecks during a shift.
-5. SOP non-compliance is difficult to detect without continuous surveillance.
+4. Production managers lack real-time data to identify and act on constraints during a shift.
+5. Process non-compliance is difficult to detect without continuous structured observation.
 
 
 ## Technology
 
-Zedral uses computer vision and AI models to analyse video feeds from existing cameras in real time. The system identifies workers and workstations, tracks activity cycles, and calculates efficiency metrics. No personally identifiable information is stored; the system works with anonymised positional data.
+Zedral applies structured analysis to activity data from existing industrial infrastructure in real time. The system identifies station activity, tracks process cycles, and calculates efficiency metrics. No personally identifiable information is stored; the system works with anonymised positional data.
 
 
 ## Company Information
@@ -54,7 +54,7 @@ Zedral uses computer vision and AI models to analyse video feeds from existing c
 - Privacy Policy: https://zedral.com/privacy
 - Founded: 2025
 - Headquarters: India
-- Industry: Manufacturing Technology, Industrial AI, Operational Intelligence
+- Industry: Manufacturing Technology, Operational Intelligence
 
 
 ## Blog Articles (Insights)
@@ -63,29 +63,29 @@ Zedral uses computer vision and AI models to analyse video feeds from existing c
   URL: https://zedral.com/news/manufacturers-operating-at-65-percent
   Summary: Explores the gap between theoretical and actual production capacity, and how structured visibility closes it.
 
-- How AI Vision Is Replacing Manual Shopfloor Observation
-  URL: https://zedral.com/news/ai-vision-replacing-manual-shopfloor-observation
-  Summary: AI-powered computer vision gives production teams continuous, objective shopfloor visibility — replacing expensive, inconsistent manual observation with real-time data from existing cameras.
+- How Operational Intelligence Is Replacing Manual Floor Observation
+  URL: https://zedral.com/news/operational-visibility-replacing-manual-floor-observation
+  Summary: Structured operational intelligence gives production teams continuous, objective floor visibility — replacing expensive, inconsistent manual observation with real-time data from existing infrastructure.
 
-- The Hidden Cost of SOP Non-Compliance on Indian Factory Floors
-  URL: https://zedral.com/news/hidden-cost-of-sop-non-compliance-indian-factories
-  Summary: SOP compliance is assumed rather than verified in most Indian factories. Quantifies the real financial cost and explains how continuous monitoring changes the equation.
+- The Hidden Cost of Process Non-Compliance on Indian Factory Floors
+  URL: https://zedral.com/news/hidden-cost-of-process-non-compliance-indian-factories
+  Summary: Process compliance is assumed rather than verified in most Indian factories. Quantifies the real financial cost and explains how continuous structured visibility changes the equation.
 
 - From Data to Decisions: What Operational Intelligence Means for Plant Managers
   URL: https://zedral.com/news/operational-intelligence-for-plant-managers
-  Summary: Plant managers are data-rich but insight-poor. Operational intelligence platforms give them workstation-level visibility to make faster, more accurate production decisions.
+  Summary: Plant managers are data-rich but insight-poor. Operational intelligence platforms give them station-level visibility to make faster, more accurate production decisions.
 
 
 ## Frequently Asked Questions
 
 Q: What hardware does Zedral require?
-A: No new hardware. Zedral works with existing CCTV or IP cameras already installed on the shopfloor.
+A: No new hardware. Zedral works with existing infrastructure already installed on the production floor.
 
 Q: Is Zedral suitable for small factories?
 A: Yes. Zedral is designed for a range of factory sizes and budgets, with deployment that scales from a single production line to multi-facility operations.
 
-Q: Does Zedral store video footage?
-A: Zedral processes video to extract anonymised activity data. Raw footage is not stored in the cloud by default.
+Q: Does Zedral store raw operational data?
+A: Zedral processes data streams to extract anonymised activity metrics. Raw feeds are not stored by default.
 
 Q: How long does implementation take?
 A: A typical initial deployment on one production line can be operational within days, not months.
@@ -94,7 +94,7 @@ Q: What industries does Zedral serve?
 A: Primarily manufacturing sectors including garments and apparel, electronics assembly, automotive components, packaging, and FMCG.
 
 Q: How is Zedral different from ERP or MES systems?
-A: ERP and MES systems record transactions and outputs. Zedral observes and measures the actual physical work happening in real time - the human activity layer that ERP cannot see.
+A: ERP and MES systems record transactions and outputs. Zedral observes and measures the actual physical work happening in real time — the human activity layer that ERP cannot see.
 
 
 ## Contact and Demo

@@ -17,15 +17,15 @@ const categories = [
     faqs: [
       {
         q: "How do I set up Zedral?",
-        a: "Connect your existing IP cameras, let our AI train for 3 days, then access your live dashboard. Our onboarding team guides you through every step. Email hello@zedral.com to begin.",
+        a: "Connect your existing infrastructure, let our system calibrate for 3 days, then access your live dashboard. Our onboarding team guides you through every step. Email hello@zedral.com to begin.",
       },
       {
-        q: "How long does AI training take?",
-        a: "Approximately 3 working days from the moment your camera streams are connected. No changes to your operations are needed during this period.",
+        q: "How long does system calibration take?",
+        a: "Approximately 3 working days from the moment your data streams are connected. No changes to your operations are needed during this period.",
       },
       {
-        q: "What cameras does Zedral support?",
-        a: "Any IP camera with an RTSP stream (H.264 or H.265), minimum 1080p at 15fps. Most standard CCTV systems work out of the box. Send us your camera model if unsure.",
+        q: "What infrastructure does Zedral support?",
+        a: "Zedral integrates with standard industrial infrastructure and manufacturing execution systems. Send us your setup details and we'll confirm compatibility.",
       },
     ],
   },
@@ -34,7 +34,7 @@ const categories = [
     faqs: [
       {
         q: "What does the dashboard show?",
-        a: "Live line efficiency, operator output, bottleneck detection, SOP compliance rate, production count, and shift-level comparisons — all updated in real time.",
+        a: "Live line efficiency, operator output, constraint detection, process compliance rate, production count, and shift-level comparisons — all updated in real time.",
       },
       {
         q: "How do automated reports work?",
@@ -47,19 +47,19 @@ const categories = [
     ],
   },
   {
-    title: "AI & Data",
+    title: "Data & Privacy",
     faqs: [
       {
-        q: "Does Zedral store our video footage?",
-        a: "No. Video streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained — never raw footage.",
+        q: "Does Zedral store raw operational data?",
+        a: "No. Data streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained — never raw feeds.",
       },
       {
         q: "Does Zedral identify individual workers?",
-        a: "No. Zedral focuses on workstation-level activity only. We do not use facial recognition or track individuals by identity.",
+        a: "No. Zedral focuses on station-level activity only. We do not use identification or track individuals by identity.",
       },
       {
-        q: "We changed our process — do we need to retrain?",
-        a: "Minor changes adapt automatically. For major workflow or layout changes, notify us at hello@zedral.com and we will run a retraining cycle at no extra cost.",
+        q: "We changed our process — do we need to recalibrate?",
+        a: "Minor changes adapt automatically. For major workflow or layout changes, notify us at hello@zedral.com and we will run a recalibration cycle at no extra cost.",
       },
     ],
   },
@@ -68,7 +68,7 @@ const categories = [
     faqs: [
       {
         q: "What plans are available?",
-        a: "Monthly and annual subscriptions, priced by number of lines and cameras. Annual plans include a discount. Contact hello@zedral.com for a quote.",
+        a: "Monthly and annual subscriptions, priced by number of lines. Annual plans include a discount. Contact hello@zedral.com for a quote.",
       },
       {
         q: "How do I cancel?",
@@ -82,15 +82,15 @@ const categories = [
   },
 ];
 
-const quickFilters = ["Camera setup", "Dashboard", "Reports", "Billing", "Data & privacy", "AI training"];
+const quickFilters = ["Setup", "Dashboard", "Reports", "Billing", "Data & privacy", "Calibration"];
 
 const helpSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How do I set up Zedral?", "acceptedAnswer": { "@type": "Answer", "text": "Connect your existing IP cameras, let our AI train for 3 days, then access your live dashboard. Email hello@zedral.com to begin." } },
-    { "@type": "Question", "name": "What cameras does Zedral support?", "acceptedAnswer": { "@type": "Answer", "text": "Any IP camera with an RTSP stream (H.264 or H.265), minimum 1080p at 15fps. Most standard CCTV systems work out of the box." } },
-    { "@type": "Question", "name": "Does Zedral store our video footage?", "acceptedAnswer": { "@type": "Answer", "text": "No. Video streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained." } },
+    { "@type": "Question", "name": "How do I set up Zedral?", "acceptedAnswer": { "@type": "Answer", "text": "Connect your existing infrastructure, let our system calibrate for 3 days, then access your live dashboard. Email hello@zedral.com to begin." } },
+    { "@type": "Question", "name": "What infrastructure does Zedral support?", "acceptedAnswer": { "@type": "Answer", "text": "Zedral integrates with standard industrial infrastructure and manufacturing execution systems. Send us your setup details and we'll confirm compatibility." } },
+    { "@type": "Question", "name": "Does Zedral store raw operational data?", "acceptedAnswer": { "@type": "Answer", "text": "No. Data streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained." } },
     { "@type": "Question", "name": "How do automated reports work?", "acceptedAnswer": { "@type": "Answer", "text": "Zedral sends daily production summaries via WhatsApp or email at the end of each shift. Configure recipients under Settings → Reports." } }
   ]
 };
@@ -115,8 +115,8 @@ const HelpCenter = () => {
     <div className="bg-background min-h-screen">
       <SEO
         title="Help Center — Zedral Support & FAQs"
-        description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing AI platform."
-        keywords="Zedral help center, Zedral support, manufacturing AI FAQ, shopfloor monitoring setup, Zedral dashboard help, operational intelligence support, Zedral camera setup"
+        description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing intelligence platform."
+        keywords="Zedral help center, Zedral support, manufacturing intelligence FAQ, production platform setup, Zedral dashboard help, operational intelligence support"
         url="https://zedral.com/help"
         jsonLd={[helpSchema, {
         "@context": "https://schema.org",

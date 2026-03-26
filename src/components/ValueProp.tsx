@@ -6,7 +6,7 @@ const items = [
   {
     icon: Eye,
     title: "Structured Visibility",
-    desc: "Gain complete visibility into operational movement and workflow patterns across every line and workstation.",
+    desc: "Gain complete visibility into operational movement and workflow patterns across every line and station.",
   },
   {
     icon: Brain,

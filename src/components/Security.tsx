@@ -55,7 +55,7 @@ const Security = () => (
         <div className="order-1 md:order-2">
           <h3 className="text-2xl font-semibold text-foreground mb-3">Secure Infrastructure</h3>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
-            Built on enterprise-grade cloud systems, Zedral delivers reliability and scale you can trust. Redundant safeguards and continuous monitoring keep operations running without disruption.
+            Built on enterprise-grade cloud systems, Zedral delivers reliability and scale you can trust. Redundant safeguards and continuous oversight keep operations running without disruption.
           </p>
         </div>
       </motion.div>
