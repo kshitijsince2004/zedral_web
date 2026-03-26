@@ -1,0 +1,68 @@
+name: Deploy to cPanel (FTP)
+
+# Automated deployment — push to main → build → FTP upload to cPanel
+# No SSH keys or server configuration needed, just FTP credentials.
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🔄 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 📦 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: 📥 Install dependencies
+      run: npm ci
+      env:
+        # Skip bundled Chromium — use system Chrome on the runner instead
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+
+    - name: 🔨 Build project (+ pre-render all 13 routes)
+      run: npm run build
+      env:
+        VITE_SITE_URL: ${{ secrets.VITE_SITE_URL }}
+        VITE_GA_MEASUREMENT_ID: ${{ secrets.VITE_GA_MEASUREMENT_ID }}
+        # Point react-snap's puppeteer at the system Chrome already on the runner
+        PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome-stable
+
+    - name: 📂 List build output
+      run: |
+        echo "✅ Build completed!"
+        echo "Files to deploy:"
+        ls -lah dist/
+        echo ""
+        echo "Total size:"
+        du -sh dist/
+
+    - name: 🚀 Deploy via FTP to cPanel
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        protocol: ftp
+        local-dir: ./dist/
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        dangerous-clean-slate: false
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env
+
+    - name: ✅ Deployment complete
+      run: |
+        echo "🎉 Deployment successful!"
+        echo "Live at: ${{ secrets.VITE_SITE_URL }}"
