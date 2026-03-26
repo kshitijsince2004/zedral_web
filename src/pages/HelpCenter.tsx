@@ -118,7 +118,14 @@ const HelpCenter = () => {
         description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing AI platform."
         keywords="Zedral help center, Zedral support, manufacturing AI FAQ, shopfloor monitoring setup, Zedral dashboard help, operational intelligence support, Zedral camera setup"
         url="https://zedral.com/help"
-        jsonLd={helpSchema}
+        jsonLd={[helpSchema, {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zedral.com" },
+          { "@type": "ListItem", "position": 2, "name": "Help Center", "item": "https://zedral.com/help" }
+        ]
+      }]}
       />
       <Navbar />
 

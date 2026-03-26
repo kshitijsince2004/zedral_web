@@ -63,6 +63,18 @@ Zedral uses computer vision and AI models to analyse video feeds from existing c
   URL: https://zedral.com/news/manufacturers-operating-at-65-percent
   Summary: Explores the gap between theoretical and actual production capacity, and how structured visibility closes it.
 
+- How AI Vision Is Replacing Manual Shopfloor Observation
+  URL: https://zedral.com/news/ai-vision-replacing-manual-shopfloor-observation
+  Summary: AI-powered computer vision gives production teams continuous, objective shopfloor visibility — replacing expensive, inconsistent manual observation with real-time data from existing cameras.
+
+- The Hidden Cost of SOP Non-Compliance on Indian Factory Floors
+  URL: https://zedral.com/news/hidden-cost-of-sop-non-compliance-indian-factories
+  Summary: SOP compliance is assumed rather than verified in most Indian factories. Quantifies the real financial cost and explains how continuous monitoring changes the equation.
+
+- From Data to Decisions: What Operational Intelligence Means for Plant Managers
+  URL: https://zedral.com/news/operational-intelligence-for-plant-managers
+  Summary: Plant managers are data-rich but insight-poor. Operational intelligence platforms give them workstation-level visibility to make faster, more accurate production decisions.
+
 
 ## Frequently Asked Questions
 

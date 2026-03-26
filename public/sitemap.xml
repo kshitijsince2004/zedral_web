@@ -8,37 +8,9 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://zedral.com/</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!-- PRIORITY 0.9 — Homepage Sections (anchor links)              -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://zedral.com/#about</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zedral.com/#capabilities</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zedral.com/#integration</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zedral.com/#why-zedral</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <!-- ============================================================ -->
@@ -46,13 +18,13 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://zedral.com/contact</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zedral.com/news</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -122,13 +94,13 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://zedral.com/help</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://zedral.com/careers</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -138,19 +110,19 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://zedral.com/privacy</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://zedral.com/terms</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://zedral.com/cookies</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

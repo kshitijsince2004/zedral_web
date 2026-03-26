@@ -19,7 +19,11 @@ const homepageSchema = {
     "@type": "Organization",
     "name": "Zedral",
     "url": "https://zedral.com",
-    "sameAs": ["https://linkedin.com/company/zedral"]
+    "sameAs": [
+      "https://www.linkedin.com/company/zedral",
+      "https://www.instagram.com/zedral.in/",
+      "https://twitter.com/ZedralHQ"
+    ]
   },
   "areaServed": { "@type": "Country", "name": "India" },
   "url": "https://zedral.com"

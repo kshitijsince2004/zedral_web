@@ -10,6 +10,15 @@ const NewsBlog = () => {
   const featured = blogPosts[0];
   const rest = blogPosts.slice(1);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zedral.com" },
+      { "@type": "ListItem", "position": 2, "name": "Insights & News", "item": "https://zedral.com/news" }
+    ]
+  };
+
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -38,7 +47,7 @@ const NewsBlog = () => {
         description="Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations from the Zedral team."
         keywords="manufacturing intelligence blog, AI shopfloor insights, operational efficiency articles, production optimization tips, Indian manufacturing technology"
         url="https://zedral.com/news"
-        jsonLd={blogSchema}
+        jsonLd={[breadcrumbSchema, blogSchema]}
       />
 
       {/* Dark hero section */}

@@ -231,6 +231,90 @@ const RoleDetail = ({ domain, onClose }: { domain: DomainDetail; onClose: () => 
   </motion.div>
 );
 
+const jobPostingSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Data & ML Engineer",
+    "description": "Design and train ML models on operational and production data. Own the full ML lifecycle from data collection through training, evaluation, and production deployment. Build ML training pipelines, optimise models for edge and cloud inference.",
+    "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
+    "employmentType": "FULL_TIME",
+    "workHours": "Full-time",
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": { "@type": "Country", "name": "India" },
+    "datePosted": "2026-03-26",
+    "validThrough": "2026-12-31",
+    "url": "https://zedral.com/careers",
+    "skills": "Python, PyTorch, Scikit-learn, Time-Series Analysis, MLflow, ONNX, TensorFlow",
+    "industry": "Manufacturing Technology / AI",
+    "occupationalCategory": "15-1299.09"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Computer Vision Engineer",
+    "description": "Build the vision layer that turns raw camera streams into structured operational intelligence. Build and fine-tune object detection, tracking, and activity recognition models for factory environments.",
+    "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
+    "employmentType": "FULL_TIME",
+    "workHours": "Full-time",
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": { "@type": "Country", "name": "India" },
+    "datePosted": "2026-03-26",
+    "validThrough": "2026-12-31",
+    "url": "https://zedral.com/careers",
+    "skills": "Python, OpenCV, PyTorch, YOLOv8, Object Detection, TensorRT, RTSP video streaming",
+    "industry": "Manufacturing Technology / AI",
+    "occupationalCategory": "15-1299.09"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Backend Engineer",
+    "description": "Build backend systems that power Zedral — from ingesting video-derived events in real time to storing structured operational data and serving APIs to the dashboard and customer integrations.",
+    "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
+    "employmentType": "FULL_TIME",
+    "workHours": "Full-time",
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": { "@type": "Country", "name": "India" },
+    "datePosted": "2026-03-26",
+    "validThrough": "2026-12-31",
+    "url": "https://zedral.com/careers",
+    "skills": "Python, FastAPI, PostgreSQL, Redis, WebSockets, Docker, Kafka, TimescaleDB, AWS",
+    "industry": "Manufacturing Technology / AI",
+    "occupationalCategory": "15-1299.09"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Full-Stack / Frontend Engineer",
+    "description": "Build the Zedral dashboard — a real-time operational intelligence interface for factory managers, production heads, and operators. Implement live data visualisations, WebSocket-powered updates, and role-based views.",
+    "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
+    "employmentType": "FULL_TIME",
+    "workHours": "Full-time",
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": { "@type": "Country", "name": "India" },
+    "datePosted": "2026-03-26",
+    "validThrough": "2026-12-31",
+    "url": "https://zedral.com/careers",
+    "skills": "React, TypeScript, Tailwind CSS, WebSockets, Recharts, Vite, TanStack Query, Framer Motion",
+    "industry": "Manufacturing Technology / AI",
+    "occupationalCategory": "15-1299.09"
+  }
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zedral.com" },
+    { "@type": "ListItem", "position": 2, "name": "Careers", "item": "https://zedral.com/careers" }
+  ]
+};
+
 const Careers = () => {
   const [openDomain, setOpenDomain] = useState<number | null>(null);
 
@@ -241,6 +325,7 @@ const Careers = () => {
       description="Join Zedral and build AI-powered operational intelligence for Indian manufacturing. Open roles in Machine Learning, Computer Vision, Backend, and Full-Stack engineering. Based in India."
       keywords="careers at Zedral, manufacturing AI jobs India, computer vision engineer jobs India, ML engineer manufacturing startup, AI startup jobs India, operational intelligence careers, machine learning jobs India, backend engineer manufacturing AI, full stack engineer India startup, tech jobs India 2025"
       url="https://zedral.com/careers"
+      jsonLd={[breadcrumbSchema, ...jobPostingSchemas]}
     />
     <Navbar />
 

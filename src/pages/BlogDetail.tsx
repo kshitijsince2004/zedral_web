@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Linkedin, Twitter, MessageCircle } from "lucide-react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { getPostBySlug, ContentBlock } from "@/data/blogPosts";
 
@@ -60,34 +60,68 @@ const BlogDetail = () => {
   // 404 redirect if slug not found
   if (!post) return <Navigate to="/news" replace />;
 
+  const postUrl = `https://zedral.com/news/${post.slug}`;
+
+  // Estimate word count from text-based content blocks
+  const wordCount = post.content.reduce((acc, block) => {
+    if (block.type === "paragraph" || block.type === "heading") {
+      return acc + block.text.split(/\s+/).length;
+    }
+    if (block.type === "list") {
+      return acc + block.items.join(" ").split(/\s+/).length;
+    }
+    return acc;
+  }, 0);
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zedral.com" },
+      { "@type": "ListItem", "position": 2, "name": "Insights & News", "item": "https://zedral.com/news" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://zedral.com/news/${post.slug}` }
+    ]
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.seo.description ?? post.excerpt,
     "image": "https://zedral.com/og-image.png",
+    "thumbnailUrl": "https://zedral.com/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "Zedral",
       "url": "https://zedral.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/zedral",
+        "https://www.instagram.com/zedral.in/",
+        "https://twitter.com/ZedralHQ"
+      ]
     },
     "publisher": {
       "@type": "Organization",
       "name": "Zedral",
+      "url": "https://zedral.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://zedral.com/og-image.png",
+        "width": 1200,
+        "height": 630
       },
     },
     "datePublished": post.dateISO,
     "dateModified": post.dateISO,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://zedral.com/news/${post.slug}`,
+      "@id": postUrl,
     },
-    "keywords": post.tags,
+    "url": postUrl,
+    "keywords": post.tags.join(", "),
     "articleSection": post.category,
-    "inLanguage": "en",
+    "inLanguage": "en-IN",
+    "wordCount": wordCount,
   };
 
   return (
@@ -96,10 +130,10 @@ const BlogDetail = () => {
         title={post.seo.title ?? post.title}
         description={post.seo.description ?? post.excerpt}
         keywords={post.seo.keywords}
-        url={`https://zedral.com/news/${post.slug}`}
+        url={postUrl}
         type="article"
         author={post.author}
-        jsonLd={articleSchema}
+        jsonLd={[articleSchema, breadcrumbSchema]}
         article={{
           publishedTime: `${post.dateISO}T00:00:00+05:30`,
           modifiedTime: `${post.dateISO}T00:00:00+05:30`,
@@ -200,8 +234,40 @@ const BlogDetail = () => {
               <Block key={i} block={block} />
             ))}
 
+            {/* Social Share */}
+            <div className="flex items-center gap-3 mt-12 pt-8 border-t border-border">
+              <span className="text-xs font-medium tracking-[0.15em] uppercase text-muted-foreground mr-1">Share</span>
+              <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(postUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Share on LinkedIn"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-border text-xs font-medium text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+              >
+                <Linkedin size={13} /> LinkedIn
+              </a>
+              <a
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(postUrl)}&text=${encodeURIComponent(post.title)}&via=ZedralHQ`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Share on X (Twitter)"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-border text-xs font-medium text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+              >
+                <Twitter size={13} /> X
+              </a>
+              <a
+                href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.title + " " + postUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Share on WhatsApp"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-border text-xs font-medium text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+              >
+                <MessageCircle size={13} /> WhatsApp
+              </a>
+            </div>
+
             {/* CTA */}
-            <div className="border-t border-border pt-10 mt-16">
+            <div className="border-t border-border pt-10 mt-10">
               <div className="bg-muted rounded-2xl p-8 md:p-10 text-center">
                 <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-muted-foreground mb-3">
                   See it in action
