@@ -20,7 +20,10 @@ const Security = () => (
             Built on Trust, Secured by Design
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-md leading-relaxed">
-            Your data is always protected. Zedral uses enterprise-grade security, encryption, and strict access controls so you can focus on performance with confidence.
+            Your operational data is always protected. Zedral uses industrial-grade security, enterprise-level encryption, and strict role-based access controls so you can monitor your workstation performance with full confidence in your data privacy.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground/80 leading-relaxed max-w-md">
+            Our platform is designed to meet stringent global standards and complies with the latest Indian data protection regulations (DPDPA 2023), ensuring that your factory's sensitive operational telemetry remains under your exclusive control.
           </p>
         </motion.div>
         <motion.div
@@ -30,7 +33,7 @@ const Security = () => (
           viewport={{ once: true }}
           className="flex justify-center md:justify-end"
         >
-          <img src={securityHeader} alt="Security shield" className="w-56 h-56 object-contain mix-blend-multiply" loading="lazy" />
+          <img src={securityHeader} alt="Zedral Industrial Security Shield and Trust Icon" className="w-56 h-56 object-contain mix-blend-multiply" loading="lazy" />
         </motion.div>
       </div>
 
@@ -43,14 +46,14 @@ const Security = () => (
           </p>
         </div>
         <div className="flex justify-center">
-          <img src={securityEncryption} alt="End-to-end encryption" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
+          <img src={securityEncryption} alt="End-to-end data encryption for manufacturing telemetry" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
         </div>
       </motion.div>
 
       {/* Row 2: illustration left, text right */}
       <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <div className="flex justify-center order-2 md:order-1">
-          <img src={securityInfrastructure} alt="Secure infrastructure" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
+          <img src={securityInfrastructure} alt="Secure cloud infrastructure for industrial operational intelligence" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
         </div>
         <div className="order-1 md:order-2">
           <h3 className="text-2xl font-semibold text-foreground mb-3">Secure Infrastructure</h3>
@@ -65,18 +68,18 @@ const Security = () => (
         <div>
           <h3 className="text-2xl font-semibold text-foreground mb-3">Minimal Data Retention</h3>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
-            Operational data is processed in real-time with minimal retention. The emphasis is on insight, not storage — giving you full privacy compliance out of the box.
+            Operational data is processed in real-time with minimal retention. The emphasis is on insight, not storage, giving you full privacy compliance out of the box.
           </p>
         </div>
         <div className="flex justify-center">
-          <img src={securityRetention} alt="Minimal data retention" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
+          <img src={securityRetention} alt="Privacy-focused minimal data retention policy for factory video streams" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
         </div>
       </motion.div>
 
       {/* Row 4: illustration left, text right */}
       <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="grid md:grid-cols-2 gap-12 items-center">
         <div className="flex justify-center order-2 md:order-1">
-          <img src={securityAccess} alt="Secure access controls" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
+          <img src={securityAccess} alt="Role-based secure access controls for industrial dashboards" className="w-full max-w-sm h-auto mix-blend-multiply" loading="lazy" />
         </div>
         <div className="order-1 md:order-2">
           <h3 className="text-2xl font-semibold text-foreground mb-3">Secure Access Controls</h3>

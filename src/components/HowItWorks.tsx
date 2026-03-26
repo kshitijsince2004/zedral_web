@@ -4,9 +4,24 @@ import stepAnalyze from "@/assets/step-analyze.png";
 import stepRefine from "@/assets/step-refine.png";
 
 const steps = [
-  { step: "Step 1", img: stepIntegrate, title: "Integrate Seamlessly", desc: "Zedral integrates within existing industrial ecosystems — manufacturing execution systems, monitoring infrastructure, and process control environments — with minimal structural change." },
-  { step: "Step 2", img: stepAnalyze, title: "Interpret & Analyze", desc: "Complex on-ground activity is transformed into structured, decision-support insights. Context-aware interpretation of process flow identifies improvement opportunities." },
-  { step: "Step 3", img: stepRefine, title: "Refine & Improve", desc: "Gain real-time operational visibility and data-backed insights to strengthen production discipline, improve alignment, and build long-term operational resilience." },
+  { 
+    step: "Step 1", 
+    img: stepIntegrate, 
+    title: "Integrate Seamlessly", 
+    desc: "Zedral integrates within existing industrial ecosystems, including manufacturing execution systems (MES), IP-based monitoring infrastructure, and complex process control environments, with minimal structural change and zero new hardware." 
+  },
+  { 
+    step: "Step 2", 
+    img: stepAnalyze, 
+    title: "Interpret & Analyze", 
+    desc: "Complex shopfloor activity is transformed into structured, decision-support insights. Context-aware interpretation of production flows identifies bottlenecks and workstation idle times with computer vision precision." 
+  },
+  { 
+    step: "Step 3", 
+    img: stepRefine, 
+    title: "Refine & Improve", 
+    desc: "Gain real-time operational visibility and data-backed insights to strengthen production discipline, improve shift-level alignment, and build long-term operational resilience for factories of the future." 
+  },
 ];
 
 const container = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
@@ -33,7 +48,7 @@ const HowItWorks = () => (
       <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid md:grid-cols-3 gap-8">
         {steps.map(({ step, img, title, desc }) => (
           <motion.div key={step} variants={item} className="text-center">
-            <img src={img} alt={title} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply mb-6" loading="lazy" />
+            <img src={img} alt={`Zedral Integration Step: ${title}`} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply mb-6" loading="lazy" />
             <span className="inline-block text-xs font-medium bg-foreground text-background px-3 py-1 rounded-md mb-3">
               {step}
             </span>

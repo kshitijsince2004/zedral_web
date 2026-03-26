@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="bg-background min-h-screen">
       <SEO
-        title="Zedral — Operational Efficiency Intelligence for Modern Industry"
+        title="Zedral: Operational Efficiency Intelligence for Modern Industry"
         description="Zedral uses AI and computer vision on your existing CCTV cameras to monitor workstations, detect production bottlenecks, and track SOP compliance in real time. No new hardware required."
         keywords="operational efficiency platform, manufacturing intelligence India, AI shopfloor monitoring, production bottleneck detection, SOP compliance tracking, workstation efficiency AI, factory floor AI India, Industry 4.0 manufacturing, computer vision shopfloor, real-time production monitoring India, manufacturing analytics software, shopfloor monitoring system"
         url="https://zedral.com/"

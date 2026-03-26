@@ -23,11 +23,11 @@ const stats = [
 ];
 
 const values = [
-  { img: valueIntent, title: "Move with intent", desc: "We move fast but never thoughtlessly. Every decision at this stage compounds — so we think clearly and ship deliberately.", maxW: "280px" },
+  { img: valueIntent, title: "Move with intent", desc: "We move fast but never thoughtlessly. Every decision at this stage compounds; so we think clearly and ship deliberately.", maxW: "280px" },
   { img: valueOwnership, title: "Own the problem", desc: "We do not hand things off and forget them. You own your work end to end, from whiteboard to production to customer impact.", maxW: "340px" },
   { img: valuePrecision, title: "Precision over noise", desc: "We are building for industrial environments where accuracy is not optional. We hold our work to that same standard.", maxW: "280px" },
   { img: valueTeam, title: "Small team, full trust", desc: "At this stage, everyone knows everyone. There are no layers. You will work directly with founders and have real influence on the product.", maxW: "340px" },
-  { img: valueCustomer, title: "Customer obsession", desc: "Our customers run factories. Understanding their world — the floor, the shift, the pressure — shapes everything we build.", maxW: "220px" },
+  { img: valueCustomer, title: "Customer obsession", desc: "Our customers run factories. Understanding their world, the floor, the shift, the pressure, shapes everything we build.", maxW: "220px" },
   { img: valueGrowth, title: "Grow with the company", desc: "The people who join now will define the culture, the architecture, and the trajectory of Zedral for years to come.", maxW: "280px" },
 ];
 
@@ -49,7 +49,7 @@ const domains: DomainDetail[] = [
     subtitle: "Model development · Training pipelines · Production ML",
     icon: domainMl,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will design and train the machine learning models that sit at the core of the Zedral platform. This is not prompt engineering or API wrapping — this is real model development on real industrial data. You will own the full ML lifecycle from data collection through training, evaluation, and production deployment.",
+    role: "You will design and train the machine learning models that sit at the core of the Zedral platform. This is not prompt engineering or API wrapping; this is real model development on real industrial data. You will own the full ML lifecycle from data collection through training, evaluation, and production deployment.",
     tasks: [
       "Design and train supervised and unsupervised models on operational and production data",
       "Build and maintain ML training pipelines and experiment tracking infrastructure",
@@ -71,7 +71,7 @@ const domains: DomainDetail[] = [
     subtitle: "Video understanding · Object detection · Real-time perception",
     icon: domainVision,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the vision layer that turns raw camera streams into structured operational intelligence. This is the most technically challenging part of Zedral — understanding what workers are doing, detecting process deviations, and counting production output from standard IP camera footage in real time. You will work on problems that have no off-the-shelf solution.",
+    role: "You will build the vision layer that turns raw camera streams into structured operational intelligence. This is the most technically challenging part of Zedral, understanding what workers are doing, detecting process deviations, and counting production output from standard IP camera footage in real time. You will work on problems that have no off-the-shelf solution.",
     tasks: [
       "Build and fine-tune object detection, tracking, and activity recognition models for factory environments",
       "Design video processing pipelines that run efficiently on edge hardware and cloud",
@@ -93,7 +93,7 @@ const domains: DomainDetail[] = [
     subtitle: "APIs · Data pipelines · Real-time systems",
     icon: domainBackend,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the backend systems that power everything Zedral does — from ingesting video-derived events in real time, to storing structured operational data, to serving it through APIs that the dashboard and customer integrations depend on. Performance, reliability, and clean architecture matter here. You will be the first backend engineer at Zedral, which means the decisions you make now will define the system for years.",
+    role: "You will build the backend systems that power everything Zedral does: from ingesting video-derived events in real time, to storing structured operational data, to serving it through APIs that the dashboard and customer integrations depend on. Performance, reliability, and clean architecture matter here. You will be the first backend engineer at Zedral, which means the decisions you make now will define the system for years.",
     tasks: [
       "Design and build APIs that serve real-time and historical operational intelligence to the frontend",
       "Build event-driven data pipelines that ingest high-frequency operational events from vision systems",
@@ -115,7 +115,7 @@ const domains: DomainDetail[] = [
     subtitle: "Dashboard · Real-time UI · Data visualisation",
     icon: domainFrontend,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the Zedral dashboard — the surface through which factory managers, production heads, and operators interact with everything we generate. This is not a simple CRUD app. It is a real-time operational intelligence interface that must be fast, clear, and intuitive enough for a factory floor supervisor to act on in seconds. Design sensibility matters as much as engineering ability here.",
+    role: "You will build the Zedral dashboard, the surface through which factory managers, production heads, and operators interact with everything we generate. This is not a simple CRUD app. It is a real-time operational intelligence interface that must be fast, clear, and intuitive enough for a factory floor supervisor to act on in seconds. Design sensibility matters as much as engineering ability here.",
     tasks: [
       "Build the core Zedral dashboard with real-time metrics, charts, and live production feeds",
       "Implement live data visualisations for operator performance, line efficiency, and bottleneck alerts",
@@ -321,7 +321,7 @@ const Careers = () => {
   return (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Careers at Zedral — Build AI for Indian Manufacturing"
+      title="Careers at Zedral: Build AI for Indian Manufacturing"
       description="Join Zedral and build AI-powered operational intelligence for Indian manufacturing. Open roles in Machine Learning, Computer Vision, Backend, and Full-Stack engineering. Based in India."
       keywords="careers at Zedral, manufacturing AI jobs India, computer vision engineer jobs India, ML engineer manufacturing startup, AI startup jobs India, operational intelligence careers, machine learning jobs India, backend engineer manufacturing AI, full stack engineer India startup, tech jobs India 2025"
       url="https://zedral.com/careers"
@@ -340,7 +340,7 @@ const Careers = () => {
           Build the intelligence<br />layer for <span className="italic font-light text-primary-foreground/50 tracking-tighter">modern industry</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-primary-foreground/60 max-w-xl leading-relaxed">
-          We are a small, focused team solving a hard problem — giving factories the clarity they have never had before. If you want your work to matter from day one, you are in the right place.
+          We are a small, focused team solving a hard problem: giving factories the clarity they have never had before. If you want your work to matter from day one, you are in the right place.
         </motion.p>
       </div>
     </section>
@@ -352,7 +352,7 @@ const Careers = () => {
           We are not building another dashboard. We are redefining how industry sees itself.
         </h2>
         <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-          Manufacturing and industrial operations generate enormous amounts of activity every single day — and almost none of it is captured in a form that drives decisions. Zedral exists to change that. We turn physical operations into structured, actionable intelligence. The engineers who join us now will shape the foundation of what that means.
+          Manufacturing and industrial operations generate enormous amounts of activity every single day, and almost none of it is captured in a form that drives decisions. Zedral exists to change that. We turn physical operations into structured, actionable intelligence. The engineers who join us now will shape the foundation of what that means.
         </p>
       </motion.div>
     </section>
@@ -430,7 +430,7 @@ const Careers = () => {
           The founding team is small. Your impact will not be.
         </h2>
         <p className="text-primary-foreground/80 text-lg mb-10 max-w-xl mx-auto">
-          Every line of code, every model, every design decision shapes what Zedral becomes. We are looking for people who want to build something that lasts — not just fill a role.
+          Every line of code, every model, every design decision shapes what Zedral becomes. We are looking for people who want to build something that lasts, not just fill a role.
         </p>
         <Link to="/contact" className="inline-flex items-center gap-2 bg-primary-foreground text-foreground font-medium px-8 py-3 rounded-lg hover:bg-primary-foreground/90 transition-colors">
           Get in touch <ArrowRight size={16} />

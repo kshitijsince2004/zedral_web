@@ -43,7 +43,7 @@ const NewsBlog = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Insights & News — Manufacturing Intelligence | Zedral"
+        title="Insights & News: Manufacturing Intelligence | Zedral"
         description="Expert perspectives on AI in manufacturing, production efficiency, and the future of industrial operations from the Zedral team."
         keywords="manufacturing intelligence blog, AI shopfloor insights, operational efficiency articles, production optimization tips, Indian manufacturing technology"
         url="https://zedral.com/news"
@@ -94,7 +94,7 @@ const NewsBlog = () => {
               className="text-sm md:text-base text-primary-foreground/50 max-w-xl leading-relaxed"
             >
               Expert perspectives on AI in manufacturing, production efficiency,
-              and the future of industrial operations — from the Zedral team.
+              and the future of industrial operations, from the Zedral team.
             </motion.p>
           </div>
         </section>
@@ -170,7 +170,7 @@ const NewsBlog = () => {
           </div>
         </section>
 
-        {/* All Other Articles — Grid */}
+        {/* All Other Articles: Grid */}
         {rest.length > 0 && (
           <section className="px-6 pb-20 md:pb-28">
             <div className="max-w-6xl mx-auto">

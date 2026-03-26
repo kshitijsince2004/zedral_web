@@ -18,7 +18,7 @@ const testimonials = [
     name: "Albert Flores",
     company: "Bank of America",
     initials: "AF",
-    quote: "Zedral doesn't disrupt — it refines. Our teams embraced it because it focuses on process enhancement, not personnel scrutiny. Exactly what modern industry needs.",
+    quote: "Zedral doesn't disrupt; it refines. Our teams embraced it because it focuses on process enhancement, not personnel scrutiny. Exactly what modern industry needs.",
   },
 ];
 

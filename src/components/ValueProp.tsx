@@ -70,7 +70,7 @@ const ValueProp = () => (
         >
             <img
               src={valuePropIllustration}
-              alt="Operational intelligence monitoring illustration"
+              alt="Industrial dashboard showing structured visibility and workstation activity patterns for operational intelligence"
               loading="lazy"
               className="w-full max-w-2xl h-auto mix-blend-multiply opacity-90"
             />
