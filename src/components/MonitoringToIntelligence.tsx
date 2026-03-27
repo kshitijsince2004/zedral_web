@@ -25,14 +25,8 @@ const MonitoringToIntelligence = () => (
           <p className="text-muted-foreground text-base leading-relaxed">
             Traditional systems observe. <span className="text-foreground font-semibold">Zedral interprets.</span>
           </p>
-          <p className="text-muted-foreground text-base leading-relaxed underline-offset-4 decoration-primary/30">
-            For manufacturing and industrial organisations, operational efficiency is no longer a reporting metric: it is a competitive advantage. Where static metrics provide hindsight, Zedral’s <span className="text-foreground font-medium">Operational Intelligence platform</span> enables forward-looking Operational Intelligence that transforms how production floors operate — delivering measurable OEE improvement and Compliance Management without new hardware.
-          </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            By integrating with existing industrial infrastructure, we eliminate the need for expensive new hardware. This approach gives plant managers structured visibility into Production Efficiency — automatically surfacing Bottleneck Detection insights and station-level delay signals before they compromise output.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Our platform is designed to integrate seamlessly into modern industrial ecosystems, providing the clarity needed to strengthen production discipline and build long-term operational resilience across every line.
+            Zedral’s <span className="text-foreground font-medium">Operational Intelligence platform</span> gives plant managers structured visibility into Production Efficiency — surfacing Bottleneck Detection insights and OEE improvements through your existing infrastructure, with no new hardware required.
           </p>
         </motion.div>
       </div>

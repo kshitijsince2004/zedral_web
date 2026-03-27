@@ -20,13 +20,10 @@ const Security = () => (
             Built on Trust, Secured by Design
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-md leading-relaxed">
-            Your operational data is always protected. Zedral uses industrial-grade security, enterprise-level encryption, and strict role-based access controls so you can monitor your workstation performance with full confidence in your data privacy.
+            Your operational data is always protected. Zedral uses industrial-grade security, enterprise-level encryption, and strict role-based access controls — so your production intelligence stays private and fully under your control.
           </p>
           <p className="mt-2 text-sm text-muted-foreground/80 leading-relaxed max-w-md">
-            Our platform is designed to meet stringent global standards and complies with the latest Indian data protection regulations (DPDPA 2023), ensuring that your factory's sensitive operational telemetry remains under your exclusive control.
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground/80 leading-relaxed max-w-md">
-            Our platform is designed to meet stringent global standards and complies with the latest Indian data protection regulations (DPDPA 2023), ensuring that your factory's sensitive operational telemetry remains under your exclusive control.
+            Compliant with DPDPA 2023 and global standards — your factory's operational telemetry stays under your exclusive control.
           </p>
         </motion.div>
         <motion.div
