@@ -34,7 +34,7 @@ const categories = [
     faqs: [
       {
         q: "What does the dashboard show?",
-        a: "Live line efficiency, operator output, constraint detection, process compliance rate, production count, and shift-level comparisons — all updated in real time.",
+        a: "Live line efficiency, operator output, constraint detection, process compliance rate, production count, and shift-level comparisons. All updated in real time.",
       },
       {
         q: "How do automated reports work?",
@@ -51,7 +51,7 @@ const categories = [
     faqs: [
       {
         q: "Does Zedral store raw operational data?",
-        a: "No. Data streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained — never raw feeds.",
+        a: "No. Data streams are processed in real time and deleted within 10 minutes. Only structured operational metrics are retained, never raw feeds.",
       },
       {
         q: "Does Zedral identify individual workers?",

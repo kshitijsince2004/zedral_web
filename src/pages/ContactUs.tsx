@@ -103,7 +103,7 @@ const ContactUs = () => {
             <span className="italic text-primary-foreground/45">your operation</span>
           </h1>
           <p className="text-base md:text-lg text-primary-foreground/50 max-w-xl leading-relaxed">
-            Whether you want to see Zedral in action, have a technical question, or need support — we are here. Every message goes to a real person on our team.
+            Whether you want to see Zedral in action, have a technical question, or need support, we are here. Every message goes to a real person on our team.
           </p>
         </div>
       </section>

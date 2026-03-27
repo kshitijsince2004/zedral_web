@@ -26,7 +26,7 @@ const MonitoringToIntelligence = () => (
             Traditional systems observe. <span className="text-foreground font-semibold">Zedral interprets.</span>
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Zedral’s <span className="text-foreground font-medium">Operational Intelligence platform</span> gives plant managers structured visibility into Production Efficiency — surfacing Bottleneck Detection insights and OEE improvements through your existing infrastructure, with no new hardware required.
+            Zedral’s <span className="text-foreground font-medium">Operational Intelligence platform</span> gives plant managers structured visibility into Production Efficiency, surfacing Bottleneck Detection insights and OEE improvements through your existing infrastructure with no new hardware required.
           </p>
         </motion.div>
       </div>

@@ -7,10 +7,10 @@ import featureCycle from "@/assets/feature-cycle.png";
 import featureBottleneck from "@/assets/feature-bottleneck.png";
 
 const features = [
-  { img: featureQuality, title: "Operational Intelligence", desc: "Gain structured Operational Intelligence into workflows as they happen — every station, every shift, in real time" },
+  { img: featureQuality, title: "Operational Intelligence", desc: "Gain structured Operational Intelligence into workflows as they happen, every station, every shift, in real time." },
   { img: featureMetrics, title: "OEE & Line Performance", desc: "Measure Overall Equipment Effectiveness and compare shift-level Production Efficiency with precise, station-specific metrics" },
   { img: featureReports, title: "Automated Production Reports", desc: "Align your team with daily automated WhatsApp and dashboard production efficiency reports" },
-  { img: featureYield, title: "Production Efficiency Gains", desc: "Most manufacturing companies run at only 65% of true capacity — unlock the remaining potential with Manufacturing AI" },
+  { img: featureYield, title: "Production Efficiency Gains", desc: "Most manufacturing companies run at only 65% of true capacity. Unlock the remaining potential with Operational Intelligence." },
   { img: featureCycle, title: "Industry 4.0 Process Analysis", desc: "Precise Industry 4.0-grade measurement of production process times and cycle efficiency for each station" },
   { img: featureBottleneck, title: "Bottleneck Detection", desc: "Automatically surface bottlenecks and balance your line in minutes using structured Compliance Management insights" },
 ];

@@ -4,7 +4,7 @@ import stepAnalyze from "@/assets/step-analyze.png";
 import stepRefine from "@/assets/step-refine.png";
 
 const steps = [
-  { step: "Step 1", img: stepIntegrate, title: "Integrate Seamlessly", desc: "Zedral integrates within existing industrial ecosystems — manufacturing execution systems, operational infrastructure, and process control environments — with minimal structural change." },
+  { step: "Step 1", img: stepIntegrate, title: "Integrate Seamlessly", desc: "Zedral integrates within existing industrial ecosystems, including manufacturing execution systems, operational infrastructure, and process control environments, with minimal structural change." },
   { step: "Step 2", img: stepAnalyze, title: "Interpret & Analyze", desc: "Complex on-ground activity is transformed into structured, decision-support insights. Context-aware interpretation of process flow identifies improvement opportunities." },
   { step: "Step 3", img: stepRefine, title: "Refine & Improve", desc: "Gain real-time operational visibility and data-backed insights to strengthen production discipline, improve alignment, and build long-term operational resilience." },
 ];
@@ -26,7 +26,7 @@ const HowItWorks = () => (
           Seamless Integration into Existing Operations
         </h2>
         <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-          Industry 4.0 Operational Intelligence deployed on your existing infrastructure — no overhaul required.
+          Industry 4.0 Operational Intelligence deployed on your existing infrastructure. No overhaul required.
         </p>
       </motion.div>
 
