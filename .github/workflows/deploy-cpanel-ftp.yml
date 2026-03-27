@@ -55,7 +55,7 @@ jobs:
           set net:max-retries 3;
           set net:reconnect-interval-base 5;
           open sftp://$SFTP_HOST:22 -u \"$SFTP_USER\",\"$SFTP_PASS\";
-          mirror --reverse --verbose --no-perms --parallel=4 ./dist/ /public_html/;
+          mirror --reverse --verbose --no-perms --parallel=4 ./dist/ /home4/baghmara/zedral.com/zedral_web/public_html/;
           quit
         "
 
