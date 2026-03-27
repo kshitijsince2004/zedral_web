@@ -1,4 +1,5 @@
-Options -MultiViews
+Options -MultiViews -Indexes
+DirectorySlash Off
 RewriteEngine On
 
 # ── HTTPS redirect ──────────────────────────────────────────────────────────
@@ -9,9 +10,9 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
-# ── Remove trailing slash (non-directory URLs) ───────────────────────────────
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} /(.+)/$
+# ── Remove trailing slash from all URLs (including react-snap directories) ──
+# Must come AFTER HTTPS/www redirects and BEFORE the SPA fallback.
+RewriteCond %{REQUEST_URI} ^/(.+)/$
 RewriteRule ^ /%1 [R=301,L]
 
 # ── Security headers ─────────────────────────────────────────────────────────
@@ -22,12 +23,33 @@ RewriteRule ^ /%1 [R=301,L]
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://script.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://script.google.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://script.google.com;"
+</IfModule>
+
+# ── Cache static assets ───────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
 
 # ── 404 error document ───────────────────────────────────────────────────────
 ErrorDocument 404 /404.html
 
-# ── SPA fallback (React Router) ──────────────────────────────────────────────
+# ── Serve pre-rendered HTML for SPA routes ───────────────────────────────────
+# 1. If a pre-rendered index.html exists for this path, serve it directly.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^ %{REQUEST_URI}/index.html [L]
+
+# 2. Fallback: serve root index.html for all other routes (React Router takes over).
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
+RewriteRule ^ /index.html [QSA,L]
