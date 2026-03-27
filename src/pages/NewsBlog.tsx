@@ -45,7 +45,7 @@ const NewsBlog = () => {
       <SEO
         title="Insights & News: Manufacturing Intelligence | Zedral"
         description="Expert perspectives on manufacturing intelligence, production efficiency, and the future of industrial operations from the Zedral team."
-        keywords="Operational Intelligence blog, Manufacturing AI insights, Production Efficiency articles, OEE manufacturing India, Bottleneck Detection articles, Compliance Management manufacturing, Industry 4.0 insights India"
+        keywords="Operational Intelligence blog, Operational Intelligence insights, Production Efficiency articles, OEE manufacturing India, Bottleneck Detection articles, Compliance Management manufacturing, Industry 4.0 insights India"
         url="https://zedral.com/news"
         jsonLd={[breadcrumbSchema, blogSchema]}
       />

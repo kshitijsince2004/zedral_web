@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
     date: "20 February 2026",
     dateISO: "2026-02-20",
     readTime: "8 min read",
-    tags: ["Operational Intelligence", "Manufacturing AI", "Production Efficiency", "Bottleneck Detection", "OEE", "Industry 4.0", "India"],
+    tags: ["Operational Intelligence", "Operational Intelligence", "Production Efficiency", "Bottleneck Detection", "OEE", "Industry 4.0", "India"],
     heroImage: featureMetrics,
     seo: {
       title:
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
       description:
         "Manufacturing organisations across India consistently underperform against their theoretical capacity. We break down where the loss happens and what structured visibility can do about it.",
       keywords:
-        "Operational Intelligence India, Manufacturing AI Production Efficiency, Bottleneck Detection manufacturing, OEE improvement, Industry 4.0 factory efficiency, production constraint India",
+        "Operational Intelligence India, Operational Intelligence Production Efficiency, Bottleneck Detection manufacturing, OEE improvement, Industry 4.0 factory efficiency, production constraint India",
     },
     content: [
       {
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Line supervisors often know where the problems are. But without structured data, their observations remain anecdotal, easy to dismiss in planning meetings, impossible to quantify for leadership.",
       },
-      { type: "image", src: featureBottleneck, alt: "Bottleneck Detection illustration — Zedral Manufacturing AI identifying production constraints" },
+      { type: "image", src: featureBottleneck, alt: "Bottleneck Detection illustration — Zedral Operational Intelligence identifying production constraints" },
       { type: "heading", text: "Where the Loss Hides" },
       {
         type: "paragraph",
@@ -138,14 +138,14 @@ export const blogPosts: BlogPost[] = [
     date: "5 March 2026",
     dateISO: "2026-03-05",
     readTime: "6 min read",
-    tags: ["Operational Intelligence", "Manufacturing AI", "Production Efficiency", "Industry 4.0", "Bottleneck Detection", "OEE"],
+    tags: ["Operational Intelligence", "Operational Intelligence", "Production Efficiency", "Industry 4.0", "Bottleneck Detection", "OEE"],
     heroImage: featureCycle,
     seo: {
       title: "How Operational Intelligence Is Replacing Manual Floor Observation",
       description:
         "Structured operational intelligence gives production teams continuous, objective floor visibility, replacing expensive, inconsistent manual observation with real-time data from existing infrastructure.",
       keywords:
-        "Operational Intelligence manufacturing, Manufacturing AI production visibility, Industry 4.0 floor observation, OEE production efficiency India, Bottleneck Detection manufacturing technology",
+        "Operational Intelligence manufacturing, Operational Intelligence production visibility, Industry 4.0 floor observation, OEE production efficiency India, Bottleneck Detection manufacturing technology",
     },
     content: [
       {
@@ -208,14 +208,14 @@ export const blogPosts: BlogPost[] = [
     date: "12 March 2026",
     dateISO: "2026-03-12",
     readTime: "7 min read",
-    tags: ["Compliance Management", "Operational Intelligence", "Manufacturing AI", "Production Efficiency", "OEE", "Indian manufacturing", "Industry 4.0"],
+    tags: ["Compliance Management", "Operational Intelligence", "Operational Intelligence", "Production Efficiency", "OEE", "Indian manufacturing", "Industry 4.0"],
     heroImage: featureQuality,
     seo: {
       title: "The Hidden Cost of Process Non-Compliance on Indian Factory Floors",
       description:
         "Process compliance is assumed rather than verified in most Indian factories. We quantify the real financial cost and explain how continuous structured visibility changes the equation.",
       keywords:
-        "Compliance Management manufacturing India, Operational Intelligence process compliance, Manufacturing AI quality tracking, OEE standard operating procedure, Production Efficiency India factory",
+        "Compliance Management manufacturing India, Operational Intelligence process compliance, Operational Intelligence quality tracking, OEE standard operating procedure, Production Efficiency India factory",
     },
     content: [
       {
@@ -279,14 +279,14 @@ export const blogPosts: BlogPost[] = [
     date: "18 March 2026",
     dateISO: "2026-03-18",
     readTime: "5 min read",
-    tags: ["Operational Intelligence", "Manufacturing AI", "Production Efficiency", "OEE", "Bottleneck Detection", "Industry 4.0", "plant manager"],
+    tags: ["Operational Intelligence", "Operational Intelligence", "Production Efficiency", "OEE", "Bottleneck Detection", "Industry 4.0", "plant manager"],
     heroImage: featureReports,
     seo: {
       title: "From Data to Decisions: What Operational Intelligence Means for Plant Managers",
       description:
         "Plant managers are data-rich but insight-poor. Operational intelligence platforms give them station-level visibility to make faster, more accurate production decisions.",
       keywords:
-        "Operational Intelligence plant manager India, Manufacturing AI production decisions, OEE improvement factory, Bottleneck Detection production data, Production Efficiency manufacturing leadership India",
+        "Operational Intelligence plant manager India, Operational Intelligence production decisions, OEE improvement factory, Bottleneck Detection production data, Production Efficiency manufacturing leadership India",
     },
     content: [
       {

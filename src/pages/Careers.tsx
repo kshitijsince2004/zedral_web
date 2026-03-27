@@ -321,9 +321,9 @@ const Careers = () => {
   return (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Careers at Zedral — Manufacturing AI & Operations Jobs"
+      title="Careers at Zedral — Operational Intelligence & Operations Jobs"
       description="Join Zedral and build operational intelligence for Indian manufacturing. Open roles in ML, Vision, Backend and Full-Stack engineering. Based in India."
-      keywords="careers at Zedral, Manufacturing AI jobs India, Operational Intelligence careers, OEE software engineer India, Bottleneck Detection ML engineer, Industry 4.0 startup jobs India, Compliance Management tech careers, machine learning manufacturing India"
+      keywords="careers at Zedral, Operational Intelligence jobs India, Operational Intelligence careers, OEE software engineer India, Bottleneck Detection ML engineer, Industry 4.0 startup jobs India, Compliance Management tech careers, machine learning manufacturing India"
       url="https://zedral.com/careers"
       jsonLd={[breadcrumbSchema, ...jobPostingSchemas]}
     />
