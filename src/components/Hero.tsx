@@ -140,7 +140,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-6 text-base md:text-lg text-primary-foreground/70 max-w-xl mx-auto leading-relaxed"
           >
-            Operational Intelligence that turns your existing infrastructure into Operational Intelligence — driving OEE, Bottleneck Detection, and Compliance Management across every shift.
+            Operational efficiency is no longer a reporting metric. It is a competitive advantage.
           </motion.p>
 
           <motion.div
