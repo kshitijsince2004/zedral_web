@@ -1,7 +1,7 @@
 name: Deploy to cPanel (SFTP)
 
 # Automated deployment — push to main → build → SFTP upload to cPanel
-# Uses SSH/SFTP (port 22) — single encrypted connection, no passive port issues.
+# Uses lftp over sftp:// (port 22) — single SSH connection, no passive port issues.
 
 on:
   push:
@@ -40,18 +40,24 @@ jobs:
         ls -lah dist/
         du -sh dist/
 
-    - name: 🚀 Deploy via SFTP to cPanel
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.SFTP_USERNAME }}
-        password: ${{ secrets.SFTP_PASSWORD }}
-        port: 22
-        local_path: './dist/*'
-        remote_path: '/public_html/'
-        sftp_only: true
-        delete_remote_files: false
+    - name: 📡 Install lftp
+      run: sudo apt-get install -y lftp
+
+    - name: 🚀 Deploy via SFTP (lftp) to cPanel
+      env:
+        SFTP_HOST: ${{ secrets.FTP_HOST }}
+        SFTP_USER: ${{ secrets.SFTP_USERNAME }}
+        SFTP_PASS: ${{ secrets.SFTP_PASSWORD }}
+      run: |
+        lftp -c "
+          set sftp:auto-confirm yes;
+          set net:timeout 60;
+          set net:max-retries 3;
+          set net:reconnect-interval-base 5;
+          open sftp://$SFTP_HOST:22 -u \"$SFTP_USER\",\"$SFTP_PASS\";
+          mirror --reverse --verbose --no-perms --parallel=4 ./dist/ /public_html/;
+          quit
+        "
 
     - name: ✅ Deployment complete
-      run: |
-        echo "🎉 Deployed to ${{ secrets.VITE_SITE_URL }}"
+      run: echo "🎉 Deployed to ${{ secrets.VITE_SITE_URL }}"
