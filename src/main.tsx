@@ -1,12 +1,9 @@
-import { createRoot, hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
-// Use hydrateRoot when react-snap has pre-rendered content into #root,
-// otherwise fall back to createRoot for a normal SPA boot.
-const rootElement = document.getElementById("root")!;
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(rootElement, <App />);
-} else {
-  createRoot(rootElement).render(<App />);
-}
+// Always use createRoot — the pre-rendered HTML in dist/ is served to
+// crawlers for SEO. React renders fresh on the client, avoiding hydration
+// mismatches caused by Framer Motion animation states differing between
+// react-snap's puppeteer render and the live browser.
+createRoot(document.getElementById("root")!).render(<App />);
