@@ -321,8 +321,8 @@ const Careers = () => {
   return (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Careers at Zedral — Build Operational Intelligence for Indian Manufacturing"
-      description="Join Zedral and build operational intelligence for Indian manufacturing. Open roles in Machine Learning, Vision Engineering, Backend, and Full-Stack engineering. Based in India."
+      title="Careers at Zedral — Manufacturing AI & Operations Jobs"
+      description="Join Zedral and build operational intelligence for Indian manufacturing. Open roles in ML, Vision, Backend and Full-Stack engineering. Based in India."
       keywords="careers at Zedral, Manufacturing AI jobs India, Operational Intelligence careers, OEE software engineer India, Bottleneck Detection ML engineer, Industry 4.0 startup jobs India, Compliance Management tech careers, machine learning manufacturing India"
       url="https://zedral.com/careers"
       jsonLd={[breadcrumbSchema, ...jobPostingSchemas]}
@@ -337,7 +337,7 @@ const Careers = () => {
           <span className="text-xs font-medium tracking-[0.2em] uppercase text-primary-foreground/70">Careers at Zedral</span>
         </motion.div>
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
-          Build the intelligence<br />layer for <span className="italic font-light text-primary-foreground/50 tracking-tighter">modern industry</span>
+          Build the intelligence layer for modern industry
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-primary-foreground/60 max-w-xl leading-relaxed">
           We are a small, focused team solving a hard problem: giving factories the clarity they have never had before. If you want your work to matter from day one, you are in the right place.

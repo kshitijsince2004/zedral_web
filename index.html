@@ -4,17 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f172a" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Zedral — Operational Efficiency Intelligence for Modern Industry</title>
-    <meta name="title" content="Zedral — Operational Efficiency Intelligence for Modern Industry" />
-    <meta name="description" content="Zedral is an advanced operational intelligence platform designed to improve efficiency across manufacturing and industrial environments." />
-    <meta name="keywords" content="Operational Intelligence India, Manufacturing AI platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, operational intelligence B2B, factory floor intelligence, production performance analysis, manufacturing analytics software India, line efficiency tracking" />
-    <meta name="author" content="Zedral" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://zedral.com/" />
-    <link rel="alternate" hreflang="en-IN" href="https://zedral.com/" />
-    <link rel="alternate" hreflang="en" href="https://zedral.com/" />
+
+    <!-- Homepage title (SEO component overrides per-page) -->
+    <title>Zedral — Operational Intelligence for Indian Manufacturing</title>
+
     <!-- Geo targeting -->
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="India" />
@@ -22,38 +15,14 @@
     <meta name="ICBM" content="20.5937, 78.9629" />
     <!-- LLM discoverability -->
     <link rel="alternate" type="text/plain" title="llms.txt" href="https://zedral.com/llms.txt" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zedral.com/" />
-    <meta property="og:title" content="Zedral — Operational Intelligence for Indian Manufacturing" />
-    <meta property="og:description" content="Zedral transforms your existing industrial infrastructure into a real-time production intelligence system. Gain structured visibility, detect constraints, and track process compliance — no new hardware required." />
-    <meta property="og:image" content="https://zedral.com/og-image.png" />
-    <meta property="og:image:secure_url" content="https://zedral.com/og-image.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Zedral — Operational Intelligence for Indian Manufacturing" />
-    <meta property="og:site_name" content="Zedral" />
-    <meta property="og:locale" content="en_IN" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://zedral.com/" />
-    <meta name="twitter:site" content="@ZedralHQ" />
-    <meta name="twitter:creator" content="@ZedralHQ" />
-    <meta name="twitter:title" content="Zedral — Operational Intelligence for Indian Manufacturing" />
-    <meta name="twitter:description" content="Turn your existing industrial infrastructure into a real-time production intelligence system. Gain structured visibility, detect constraints, track process compliance — no hardware needed." />
-    <meta name="twitter:image" content="https://zedral.com/og-image.png" />
-    <meta name="twitter:image:alt" content="Zedral — Operational Intelligence for Indian Manufacturing" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
+
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXR36HYGL"></script>
     <script>
@@ -65,7 +34,7 @@
         'cookie_flags': 'SameSite=None;Secure'
       });
     </script>
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -195,10 +164,15 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      /* Remove react-helmet-async pre-rendered tags before React mounts.
+         Prevents duplicate canonical / meta description / og: tags on CSR. */
+      document.querySelectorAll('[data-rh]').forEach(function(el){el.remove()});
+    </script>
     <script type="module" src="/src/main.tsx"></script>
     <noscript>
       <div style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#1a202c">
-        <h1>Zedral — Manufacturing AI &amp; Operational Intelligence for Indian Industry</h1>
+        <h2>Zedral — Manufacturing AI &amp; Operational Intelligence for Indian Industry</h2>
         <p>Zedral is a Manufacturing AI platform that delivers Operational Intelligence, OEE improvement, Bottleneck Detection, Production Efficiency tracking, and Compliance Management using your existing industrial infrastructure. No new hardware required.</p>
         <h2>Industry 4.0 Capabilities</h2>
         <ul>

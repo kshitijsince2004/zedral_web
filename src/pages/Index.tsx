@@ -33,10 +33,10 @@ const Index = () => {
   return (
     <div className="bg-background min-h-screen">
       <SEO
-        title="Zedral: Operational Efficiency Intelligence for Modern Industry"
-        description="Zedral is a Manufacturing AI platform delivering Operational Intelligence for Indian production floors. Detect bottlenecks, improve OEE, track Compliance Management, and boost Production Efficiency — no new hardware required."
+        title="Zedral: Operational Intelligence for Indian Manufacturing"
+        description="Zedral delivers Operational Intelligence for Indian manufacturing. Improve OEE, detect bottlenecks, ensure Compliance Management — no new hardware."
         keywords="Operational Intelligence India, Manufacturing AI platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, factory floor intelligence India, manufacturing analytics software, production performance analysis"
-        url="https://zedral.com/"
+        url="https://zedral.com"
         jsonLd={homepageSchema}
       />
       <Navbar />

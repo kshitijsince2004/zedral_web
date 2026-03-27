@@ -115,7 +115,7 @@ const HelpCenter = () => {
     <div className="bg-background min-h-screen">
       <SEO
         title="Help Center: Zedral Support & FAQs"
-        description="Find answers to common questions about setting up Zedral, using the dashboard, understanding your data, and managing your account. Support for Indian manufacturing intelligence platform."
+        description="Find answers about Zedral setup, dashboard usage, data privacy, and billing. Support for Indian manufacturing Operational Intelligence platform."
         keywords="Zedral help center, Zedral support, manufacturing intelligence FAQ, production platform setup, Zedral dashboard help, operational intelligence support"
         url="https://zedral.com/help"
         jsonLd={[helpSchema, {

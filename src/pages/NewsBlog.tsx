@@ -74,17 +74,7 @@ const NewsBlog = () => {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight text-primary-foreground mb-8 max-w-3xl"
               style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
             >
-              Thinking on{" "}
-              <span className="italic font-light text-primary-foreground/45">
-                operational
-              </span>
-              <br />
-              <span className="italic font-light text-primary-foreground/45">
-                intelligence
-              </span>{" "}
-              for
-              <br />
-              modern industry
+              Thinking on operational intelligence for modern industry
             </motion.h1>
 
             <motion.p
@@ -127,6 +117,9 @@ const NewsBlog = () => {
                   <img
                     src={featured.heroImage}
                     alt={featured.title}
+                    width="280"
+                    height="280"
+                    loading="lazy"
                     className="w-full max-w-[280px] opacity-80 mix-blend-multiply"
                   />
                 </div>
@@ -195,6 +188,9 @@ const NewsBlog = () => {
                         <img
                           src={post.heroImage}
                           alt={post.title}
+                          width="180"
+                          height="180"
+                          loading="lazy"
                           className="w-full max-w-[180px] opacity-80 mix-blend-multiply"
                         />
                       </div>

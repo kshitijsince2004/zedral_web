@@ -28,7 +28,7 @@ const Features = () => (
       className="text-center mb-16"
     >
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight leading-tight">
-        Manufacturing AI capabilities that drive<br className="hidden md:block" /> Industry 4.0 factories
+        Manufacturing AI capabilities that drive Industry 4.0 factories
       </h2>
     </motion.div>
 
@@ -43,7 +43,7 @@ const Features = () => (
         <motion.div key={title} variants={item} className="text-center">
           <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto mb-6">{desc}</p>
-          <img src={img} alt={`${title} — Zedral Manufacturing AI & Operational Intelligence Platform`} className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
+          <img src={img} alt={`${title} — Zedral Manufacturing AI & Operational Intelligence Platform`} width="280" height="280" className="w-full max-w-[280px] mx-auto h-auto mix-blend-multiply" loading="lazy" />
         </motion.div>
       ))}
     </motion.div>

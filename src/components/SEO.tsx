@@ -21,11 +21,11 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "Zedral — Operational Efficiency Intelligence for Modern Industry",
-  description = "Zedral is an operational intelligence platform that helps manufacturing companies improve efficiency through structured visibility and data-driven insights — no new hardware required.",
+  title = "Zedral — Operational Intelligence for Indian Manufacturing",
+  description = "Zedral is a Manufacturing AI platform delivering Operational Intelligence for Indian production floors. Detect bottlenecks, improve OEE, ensure Compliance Management — no new hardware required.",
   keywords = "Operational Intelligence India, Manufacturing AI platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, operational intelligence B2B, factory floor intelligence, production performance analysis, manufacturing analytics software India",
   image = "https://zedral.com/og-image.png",
-  url = "https://zedral.com/",
+  url = "https://zedral.com",
   type = "website",
   author,
   robots = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
@@ -33,6 +33,9 @@ const SEO = ({
   article
 }: SEOProps) => {
   const fullTitle = title.includes('Zedral') ? title : `${title} | Zedral`;
+
+  // Ensure og:url always matches the canonical URL
+  const canonicalUrl = url;
 
   return (
     <Helmet>
@@ -42,12 +45,16 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="robots" content={robots} />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={canonicalUrl} />
       {author && <meta name="author" content={author} />}
+
+      {/* Hreflang — en-IN + x-default */}
+      <link rel="alternate" hrefLang="en-IN" href={canonicalUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
 
       {/* Open Graph / Facebook / LinkedIn */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
@@ -63,7 +70,7 @@ const SEO = ({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@ZedralHQ" />
       <meta name="twitter:creator" content="@ZedralHQ" />
-      <meta name="twitter:url" content={url} />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
