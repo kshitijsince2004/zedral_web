@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ63DTD8NN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SJ63DTD8NN');
-    </script>
-
     <!-- Homepage title (SEO component overrides per-page) -->
-    <title>Zedral — Operational Intelligence for Indian Manufacturing</title>
+    <title>Zedral: Operational Intelligence for Indian Manufacturing</title>
 
     <!-- Geo targeting -->
     <meta name="geo.region" content="IN" />
@@ -28,20 +19,20 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Preconnect for Performance -->
+    <!-- Font: preconnect + non-blocking stylesheet load -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" /></noscript>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZXR36HYGL"></script>
+    <!-- Google Analytics (single tag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ63DTD8NN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-4ZXR36HYGL', {
-        'anonymize_ip': true,
-        'cookie_flags': 'SameSite=None;Secure'
-      });
+      gtag('config', 'G-SJ63DTD8NN', { anonymize_ip: true });
     </script>
 
     <!-- Structured Data -->

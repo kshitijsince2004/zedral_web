@@ -1,23 +1,30 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { trackEmailSignup } from "@/utils/analytics";
 
 const badges = ["OEE Improvement", "Bottleneck Detection", "Compliance Management"];
 
-// Floating particles (no mouse interaction)
+// Floating particles — desktop only, reduced count for performance
 const FloatingParticles = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(window.matchMedia("(min-width: 768px)").matches);
+  }, []);
+
   const particles = useMemo(() =>
-    Array.from({ length: 65 }, (_, i) => ({
+    Array.from({ length: 20 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 3.5 + 1,
-      duration: Math.random() * 12 + 8,
-      delay: Math.random() * 4,
+      size: Math.random() * 3 + 1,
+      duration: Math.random() * 12 + 10,
+      delay: Math.random() * 5,
     })), []);
+
+  if (!show) return null;
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -33,9 +40,8 @@ const FloatingParticles = () => {
             background: "hsl(var(--primary-foreground) / 0.25)",
           }}
           animate={{
-            y: [0, -30, 0, 20, 0],
-            x: [0, 15, -10, 5, 0],
-            opacity: [0.15, 0.6, 0.3, 0.5, 0.15],
+            y: [0, -25, 0, 15, 0],
+            opacity: [0.15, 0.5, 0.2, 0.45, 0.15],
           }}
           transition={{
             duration: p.duration,
@@ -98,8 +104,12 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <img
             src={heroIllustration}
-            alt="Zedral Operational Intelligence platform dashboard — Operational Intelligence for OEE, Bottleneck Detection, and Compliance Management in Indian manufacturing"
+            alt="Zedral Operational Intelligence platform dashboard for OEE, Bottleneck Detection, and Compliance Management"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="1200"
+            height="800"
             className="w-full h-full object-cover opacity-[0.10]"
           />
         </div>
@@ -112,14 +122,14 @@ const Hero = () => {
           style={{ background: "radial-gradient(ellipse at center, hsl(var(--accent) / 0.3), transparent 70%)" }}
         />
 
-        {/* Animated orbiting rings */}
+        {/* Animated orbiting rings — desktop only */}
         <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-primary-foreground/[0.06] pointer-events-none"
+          className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-primary-foreground/[0.06] pointer-events-none"
           animate={{ rotate: 360 }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
         />
         <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-primary-foreground/[0.04] pointer-events-none"
+          className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-primary-foreground/[0.04] pointer-events-none"
           animate={{ rotate: -360 }}
           transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
         />
