@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "@/assets/Zicji_logo-2.png";
 
@@ -48,31 +47,24 @@ const Navbar = () => {
         </button>
       </div>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden overflow-hidden bg-nav"
-          >
-            <div className="flex flex-col gap-4 px-6 py-6">
-              {navLinks.map((link) => {
-                const hash = link.toLowerCase().replace(/ /g, "-");
-                return (
-                  <button key={link} onClick={() => handleNavClick(hash)} className="text-sm text-nav-foreground/70 text-left">
-                    {link}
-                  </button>
-                );
-              })}
-              <Link to="/contact" onClick={() => setOpen(false)} className="inline-flex items-center gap-2 text-sm font-medium text-nav-foreground">
-                Get in Touch <ArrowRight size={16} />
-              </Link>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        className="lg:hidden bg-nav overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: open ? "400px" : "0px" }}
+      >
+        <div className="flex flex-col gap-4 px-6 py-6">
+          {navLinks.map((link) => {
+            const hash = link.toLowerCase().replace(/ /g, "-");
+            return (
+              <button key={link} onClick={() => handleNavClick(hash)} className="text-sm text-nav-foreground/70 text-left">
+                {link}
+              </button>
+            );
+          })}
+          <Link to="/contact" onClick={() => setOpen(false)} className="inline-flex items-center gap-2 text-sm font-medium text-nav-foreground">
+            Get in Touch <ArrowRight size={16} />
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };
