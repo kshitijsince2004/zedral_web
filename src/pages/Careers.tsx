@@ -71,7 +71,7 @@ const domains: DomainDetail[] = [
     subtitle: "Video understanding · Object detection · Real-time perception",
     icon: domainVision,
     tags: ["Full-time", "In-person / Hybrid"],
-    role: "You will build the perception layer that turns raw video streams into structured operational intelligence. This is the most technically challenging part of Zedral — understanding what is happening on the production floor, detecting process deviations, and counting output from standard video feeds in real time. You will work on problems that have no off-the-shelf solution.",
+    role: "You will build the perception layer that turns raw video streams into structured operational intelligence. This is the most technically challenging part of Zedral: understanding what is happening on the production floor, detecting process deviations, and counting output from standard video feeds in real time. You will work on problems that have no off-the-shelf solution.",
     tasks: [
       "Build and fine-tune object detection, tracking, and activity recognition models for industrial environments",
       "Design video processing pipelines that run efficiently on edge hardware and cloud",
@@ -272,7 +272,7 @@ const jobPostingSchemas = [
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title": "Backend Engineer",
-    "description": "Build backend systems that power Zedral — from ingesting operational events in real time to storing structured operational data and serving APIs to the dashboard and customer integrations.",
+    "description": "Build backend systems that power Zedral: from ingesting operational events in real time to storing structured operational data and serving APIs to the dashboard and customer integrations.",
     "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
     "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
     "employmentType": "FULL_TIME",
@@ -290,7 +290,7 @@ const jobPostingSchemas = [
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title": "Full-Stack / Frontend Engineer",
-    "description": "Build the Zedral dashboard — a real-time operational intelligence interface for factory managers, production heads, and operators. Implement live data visualisations, WebSocket-powered updates, and role-based views.",
+    "description": "Build the Zedral dashboard: a real-time operational intelligence interface for factory managers, production heads, and operators. Implement live data visualisations, WebSocket-powered updates, and role-based views.",
     "hiringOrganization": { "@type": "Organization", "name": "Zedral", "sameAs": "https://zedral.com" },
     "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "IN" } },
     "employmentType": "FULL_TIME",
@@ -321,7 +321,7 @@ const Careers = () => {
   return (
   <div className="min-h-screen bg-background">
     <SEO
-      title="Careers at Zedral — Operational Intelligence & Operations Jobs"
+      title="Careers at Zedral: Operational Intelligence & Operations Jobs"
       description="Join Zedral and build operational intelligence for Indian manufacturing. Open roles in ML, Vision, Backend and Full-Stack engineering. Based in India."
       keywords="careers at Zedral, Operational Intelligence jobs India, Operational Intelligence careers, OEE software engineer India, Bottleneck Detection ML engineer, Industry 4.0 startup jobs India, Compliance Management tech careers, machine learning manufacturing India"
       url="https://zedral.com/careers"

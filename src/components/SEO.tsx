@@ -21,8 +21,8 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "Zedral — Operational Intelligence for Indian Manufacturing",
-  description = "Zedral is an Operational Intelligence platform delivering Operational Intelligence for Indian production floors. Detect bottlenecks, improve OEE, ensure Compliance Management — no new hardware required.",
+  title = "Zedral: Operational Intelligence for Indian Manufacturing",
+  description = "Zedral is an Operational Intelligence platform delivering Operational Intelligence for Indian production floors. Detect bottlenecks, improve OEE, ensure Compliance Management. No new hardware required.",
   keywords = "Operational Intelligence India, Operational Intelligence platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, operational intelligence B2B, factory floor intelligence, production performance analysis, manufacturing analytics software India",
   image = "https://zedral.com/og-image.png",
   url = "https://zedral.com",

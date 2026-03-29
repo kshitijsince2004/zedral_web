@@ -58,7 +58,7 @@ const categories = [
         a: "No. Zedral focuses on station-level activity only. We do not use identification or track individuals by identity.",
       },
       {
-        q: "We changed our process — do we need to recalibrate?",
+        q: "We changed our process: do we need to recalibrate?",
         a: "Minor changes adapt automatically. For major workflow or layout changes, notify us at hello@zedral.com and we will run a recalibration cycle at no extra cost.",
       },
     ],

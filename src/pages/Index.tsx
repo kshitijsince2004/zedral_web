@@ -34,7 +34,7 @@ const Index = () => {
     <div className="bg-background min-h-screen">
       <SEO
         title="Zedral: Operational Intelligence for Indian Manufacturing"
-        description="Zedral delivers Operational Intelligence for Indian manufacturing. Improve OEE, detect bottlenecks, ensure Compliance Management — no new hardware."
+        description="Zedral delivers Operational Intelligence for Indian manufacturing. Improve OEE, detect bottlenecks, ensure Compliance Management. No new hardware."
         keywords="Operational Intelligence India, Operational Intelligence platform, Production Efficiency software, Bottleneck Detection manufacturing, Industry 4.0 India, OEE improvement, Compliance Management manufacturing, factory floor intelligence India, manufacturing analytics software, production performance analysis"
         url="https://zedral.com"
         jsonLd={homepageSchema}

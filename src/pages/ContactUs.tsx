@@ -83,7 +83,7 @@ const ContactUs = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact Zedral — Request a Demo or Get Support"
+        title="Contact Zedral: Request a Demo or Get Support"
         description="Get in touch with Zedral to request a demo, ask a technical question, or get support for your manufacturing intelligence platform."
         url="https://zedral.com/contact"
         keywords="contact Zedral, request Zedral demo, Operational Intelligence demo India, Operational Intelligence software demo, OEE improvement demo, Bottleneck Detection platform, Compliance Management demo, Industry 4.0 manufacturing India"
