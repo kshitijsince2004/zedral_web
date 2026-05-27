@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Inc42Recognition from "@/components/Inc42Recognition";
 import ValueProp from "@/components/ValueProp";
 import MonitoringToIntelligence from "@/components/MonitoringToIntelligence";
 import HowItWorks from "@/components/HowItWorks";
@@ -41,6 +42,7 @@ const Index = () => {
       />
       <Navbar />
       <Hero />
+      <Inc42Recognition />
       <ValueProp />
       <MonitoringToIntelligence />
       <HowItWorks />
