@@ -43,32 +43,15 @@ jobs:
         ls -lah dist/
         du -sh dist/
 
-    - name: 📡 Install lftp
-      run: sudo apt-get install -y lftp
-
     - name: 🚀 Deploy to cPanel via FTPS
-      env:
-        FTP_HOST: ${{ secrets.FTP_HOST }}
-        FTP_USER: ${{ secrets.FTP_USERNAME }}
-        FTP_PASS: ${{ secrets.FTP_PASSWORD }}
-      run: |
-        lftp -c "
-          set ssl:verify-certificate no;
-          set ftp:ssl-force true;
-          set ftp:ssl-protect-data true;
-          set net:max-retries 3;
-
-          open -u $FTP_USER,$FTP_PASS $FTP_HOST;
-
-          mirror -R \
-            --delete \
-            --verbose \
-            --no-perms \
-            ./dist/ \
-            public_html/;
-
-          bye
-        "
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        local-dir: ./dist/
+        server-dir: ./public_html/
 
     - name: ✅ Deployment complete
       run: echo "🎉 Deployed to ${{ secrets.VITE_SITE_URL }}"
