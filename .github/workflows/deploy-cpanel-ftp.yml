@@ -43,15 +43,49 @@ jobs:
         ls -lah dist/
         du -sh dist/
 
-    - name: 🚀 Deploy to cPanel via FTPS
+    - name: 📦 Prepare Zip Payload
+      run: |
+        # Create a deployment folder
+        mkdir deploy-payload
+        
+        # Zip the contents of the dist folder (so it extracts directly into the root, not into a 'dist' folder)
+        cd dist
+        zip -r ../deploy-payload/dist.zip .
+        cd ..
+        
+        # Create a PHP script to extract the zip on the server
+        cat << 'EOF' > deploy-payload/unzip.php
+        <?php
+        $zip = new ZipArchive;
+        if ($zip->open('dist.zip') === TRUE) {
+            $zip->extractTo('./');
+            $zip->close();
+            
+            // Cleanup
+            unlink('dist.zip');
+            unlink('unzip.php');
+            
+            echo "Deployment successful!";
+        } else {
+            http_response_code(500);
+            echo "Failed to extract dist.zip";
+        }
+        ?>
+        EOF
+
+    - name: 🚀 Upload Payload to cPanel via FTPS
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
-        local-dir: ./dist/
+        local-dir: ./deploy-payload/
         server-dir: ./public_html/
+        dangerous-clean-slate: false
 
-    - name: ✅ Deployment complete
-      run: echo "🎉 Deployed to ${{ secrets.VITE_SITE_URL }}"
+    - name: 💥 Trigger Extraction on Server
+      run: |
+        echo "Triggering unzip on the live server..."
+        curl -f -sS "${{ secrets.VITE_SITE_URL }}/unzip.php"
+        echo "🎉 Successfully deployed and extracted to ${{ secrets.VITE_SITE_URL }}"
